@@ -221,14 +221,14 @@ export default function Index() {
                       <GraduationCap className="h-6 w-6 text-primary" />
                     </div>
                     <div className="flex-1">
-                      <CardTitle className="text-xl">
+                                            <CardTitle className="text-xl">
                         BSc, Computing and Information Technologies
                       </CardTitle>
                       <CardDescription className="text-lg font-medium text-primary">
                         Rochester Institute of Technology, Dubai
                       </CardDescription>
                       <p className="text-sm text-muted-foreground mt-2">
-                        Expected Dec 2025 • GPA: 3.49
+                        Expected Dec 2025 • Cumulative GPA: 3.5 • Minor: Web Development
                       </p>
                     </div>
                   </div>
@@ -237,8 +237,8 @@ export default function Index() {
                   <div className="space-y-3">
                     <div className="flex items-center gap-2">
                       <Award className="h-4 w-4 text-primary" />
-                      <span className="text-sm">
-                        Dean's List - Recognized for academic excellence three
+                                            <span className="text-sm">
+                        Dean's List - Recognized for academic excellence four
                         times
                       </span>
                     </div>
@@ -248,11 +248,17 @@ export default function Index() {
                         40% scholarship towards tuition
                       </span>
                     </div>
-                    <div className="flex items-center gap-2">
+                                        <div className="flex items-center gap-2">
                       <Award className="h-4 w-4 text-primary" />
                       <span className="text-sm">
                         Global Scholarship Program: $3,270 USD (granted to only
                         one student per semester)
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Award className="h-4 w-4 text-primary" />
+                      <span className="text-sm">
+                        Active member of AIRC (Artificial Intelligence & Robotics Club)
                       </span>
                     </div>
                   </div>
