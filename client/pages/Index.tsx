@@ -75,7 +75,7 @@ export default function Index() {
               FOR BUSINESSES
             </h2>
             
-            <p className="text-lg text-white/80 max-w-md mb-12 leading-relaxed">
+                        <p className="text-lg text-white/80 mb-12 leading-relaxed" style={{ maxWidth: '529px', margin: '0 0 48px 250px' }}>
               Hey! I'm Adhel, I've done it all – from data analysis, machine learning, and 
               business intelligence all the way to automation development. I go always 
               above and beyond and with most clients I work long-term, some like me so 
