@@ -98,7 +98,7 @@ export default function Index() {
                 </h1>
                 <div className="mt-4">
                   <div className="w-12 h-0.5 bg-[orange-500] mb-4"></div>
-                  <h2 className="text-2xl lg:text-3xl text-[orange-500] font-medium">
+                  <h2 className="text-2xl lg:text-3xl text-orange-500 font-medium">
                     I am Adhel Siddique
                   </h2>
                   <h3 className="text-xl lg:text-2xl text-white font-medium mt-2">
@@ -127,16 +127,16 @@ export default function Index() {
 
           {/* Bottom Hero Description */}
           <div className="mt-12 lg:mt-24 max-w-md">
-            <p className="text-[orange-500] text-lg leading-relaxed mb-6">
+            <p className="text-orange-500 text-lg leading-relaxed mb-6">
               I am a Data Analyst & AI Developer. My specialty lies in
               transforming complex data into actionable insights. That's
               creativity in determining solutions that fit business goals.
             </p>
             <div className="flex items-center gap-4">
-              <span className="text-[orange-500] text-2xl font-medium">
+              <span className="text-orange-500 text-2xl font-medium">
                 Let's Talk
               </span>
-              <ArrowRight className="w-8 h-8 text-[orange-500]" />
+              <ArrowRight className="w-8 h-8 text-orange-500" />
             </div>
           </div>
         </div>
@@ -149,7 +149,7 @@ export default function Index() {
       <section id="about" className="bg-[black] py-24">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h3 className="text-[orange-500] text-xl mb-4 uppercase tracking-wide">
+            <h3 className="text-orange-500 text-xl mb-4 uppercase tracking-wide">
               Biography
             </h3>
             <h2 className="text-white text-5xl font-bold mb-8">Who am I?</h2>
@@ -179,7 +179,7 @@ export default function Index() {
 
             {/* Right - Content */}
             <div>
-              <h3 className="text-[orange-500] text-xl mb-4">About Me</h3>
+              <h3 className="text-orange-500 text-xl mb-4">About Me</h3>
               <h4 className="text-white text-2xl font-bold mb-6">
                 Adhel Siddique's Details
               </h4>
@@ -193,25 +193,25 @@ export default function Index() {
 
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="bg-[gray-800] rounded-lg p-4 border-l-4 border-[orange-500]">
-                  <h5 className="text-[orange-500] text-sm font-bold mb-1">
+                  <h5 className="text-orange-500 text-sm font-bold mb-1">
                     Name
                   </h5>
                   <p className="text-white">Adhel Siddique</p>
                 </div>
                 <div className="bg-[gray-800] rounded-lg p-4 border-l-4 border-[orange-500]">
-                  <h5 className="text-[orange-500] text-sm font-bold mb-1">
+                  <h5 className="text-orange-500 text-sm font-bold mb-1">
                     Email
                   </h5>
                   <p className="text-white">adhel@example.com</p>
                 </div>
                 <div className="bg-[gray-800] rounded-lg p-4 border-l-4 border-[orange-500]">
-                  <h5 className="text-[orange-500] text-sm font-bold mb-1">
+                  <h5 className="text-orange-500 text-sm font-bold mb-1">
                     Location
                   </h5>
                   <p className="text-white">Dubai, UAE</p>
                 </div>
                 <div className="bg-[gray-800] rounded-lg p-4 border-l-4 border-[orange-500]">
-                  <h5 className="text-[orange-500] text-sm font-bold mb-1">
+                  <h5 className="text-orange-500 text-sm font-bold mb-1">
                     Phone
                   </h5>
                   <p className="text-white">+971-XXX-XXXX</p>
@@ -231,7 +231,7 @@ export default function Index() {
       <section id="services" className="bg-[black] py-24">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h3 className="text-[orange-500] text-xl mb-4 uppercase tracking-wide">
+            <h3 className="text-orange-500 text-xl mb-4 uppercase tracking-wide">
               Service
             </h3>
             <h2 className="text-white text-5xl font-bold">What I Do?</h2>
@@ -244,28 +244,28 @@ export default function Index() {
                 title: "Data Analysis",
                 description:
                   "Transform raw data into meaningful insights using advanced statistical methods and visualization techniques.",
-                icon: <BarChart3 className="w-8 h-8 text-[orange-500]" />,
+                icon: <BarChart3 className="w-8 h-8 text-orange-500" />,
               },
               {
                 number: "02.",
                 title: "Business Intelligence",
                 description:
                   "Create comprehensive BI solutions that drive strategic decision-making and business growth.",
-                icon: <TrendingUp className="w-8 h-8 text-[orange-500]" />,
+                icon: <TrendingUp className="w-8 h-8 text-orange-500" />,
               },
               {
                 number: "03.",
                 title: "Machine Learning",
                 description:
                   "Develop AI models and automation solutions that optimize processes and predict outcomes.",
-                icon: <Brain className="w-8 h-8 text-[orange-500]" />,
+                icon: <Brain className="w-8 h-8 text-orange-500" />,
               },
               {
                 number: "04.",
                 title: "Database Design",
                 description:
                   "Design and optimize database systems for maximum performance and data integrity.",
-                icon: <Database className="w-8 h-8 text-[orange-500]" />,
+                icon: <Database className="w-8 h-8 text-orange-500" />,
               },
             ].map((service, index) => (
               <Card
@@ -295,7 +295,7 @@ export default function Index() {
       <section className="bg-[black] py-24">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h3 className="text-[orange-500] text-xl mb-4 uppercase tracking-wide">
+            <h3 className="text-orange-500 text-xl mb-4 uppercase tracking-wide">
               2+ Years Experience
             </h3>
             <h2 className="text-white text-5xl font-bold">My Skills</h2>
@@ -339,7 +339,7 @@ export default function Index() {
                           <h4 className="text-white text-xl font-bold mb-2">
                             {skill.title}
                           </h4>
-                          <p className="text-[orange-500] text-sm">
+                          <p className="text-orange-500 text-sm">
                             {skill.institution}
                           </p>
                         </div>
@@ -352,12 +352,12 @@ export default function Index() {
                               />
                             ))}
                           </div>
-                          <span className="text-[orange-500] text-sm">
+                          <span className="text-orange-500 text-sm">
                             {skill.rating}
                           </span>
                         </div>
                       </div>
-                      <p className="text-[orange-500] leading-relaxed">
+                      <p className="text-orange-500 leading-relaxed">
                         {skill.description}
                       </p>
                     </CardContent>
@@ -376,7 +376,7 @@ export default function Index() {
       <section id="portfolio" className="bg-[gray-900] py-24">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h3 className="text-[orange-500] text-xl mb-4 uppercase tracking-wide">
+            <h3 className="text-orange-500 text-xl mb-4 uppercase tracking-wide">
               Portfolio
             </h3>
             <h2 className="text-white text-5xl font-bold">Latest Projects</h2>
@@ -389,7 +389,7 @@ export default function Index() {
                 (filter) => (
                   <button
                     key={filter}
-                    className="px-6 py-2 text-[orange-500] font-bold hover:bg-[orange-500] hover:text-black transition-colors rounded-full"
+                    className="px-6 py-2 text-orange-500 font-bold hover:bg-[orange-500] hover:text-black transition-colors rounded-full"
                   >
                     {filter}
                   </button>
@@ -431,7 +431,7 @@ export default function Index() {
                 </div>
                 <div className="flex-1 space-y-6">
                   <div>
-                    <h4 className="text-[orange-500] text-lg font-bold mb-2">
+                    <h4 className="text-orange-500 text-lg font-bold mb-2">
                       {project.category}
                     </h4>
                     <h3 className="text-white text-4xl font-bold mb-4">
@@ -442,10 +442,10 @@ export default function Index() {
                     </p>
                   </div>
                   <div className="flex items-center gap-4">
-                    <span className="text-[orange-500] text-xl font-bold">
+                    <span className="text-orange-500 text-xl font-bold">
                       See More
                     </span>
-                    <ArrowRight className="w-6 h-6 text-[orange-500]" />
+                    <ArrowRight className="w-6 h-6 text-orange-500" />
                   </div>
                 </div>
               </div>
@@ -504,7 +504,7 @@ export default function Index() {
               >
                 <CardContent className="p-0">
                   <div className="flex items-center gap-2 mb-4">
-                    <span className="text-[orange-500]">[</span>
+                    <span className="text-orange-500">[</span>
                     <div className="flex">
                       {[...Array(5)].map((_, i) => (
                         <Star
@@ -513,9 +513,9 @@ export default function Index() {
                         />
                       ))}
                     </div>
-                    <span className="text-[orange-500]">]</span>
+                    <span className="text-orange-500">]</span>
                   </div>
-                  <p className="text-[orange-500] text-lg leading-relaxed mb-6">
+                  <p className="text-orange-500 text-lg leading-relaxed mb-6">
                     "{testimonial.text}"
                   </p>
                   <div className="flex items-center gap-4">
@@ -524,7 +524,7 @@ export default function Index() {
                       <p className="text-white text-sm font-medium">
                         {testimonial.author}
                       </p>
-                      <p className="text-[orange-500] text-xs">
+                      <p className="text-orange-500 text-xs">
                         {testimonial.role}
                       </p>
                     </div>
@@ -540,7 +540,7 @@ export default function Index() {
       <section id="contact" className="bg-[black] py-24">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h3 className="text-[orange-500] text-xl mb-4 uppercase tracking-wide">
+            <h3 className="text-orange-500 text-xl mb-4 uppercase tracking-wide">
               Contact Info
             </h3>
             <h2 className="text-white text-5xl font-bold">Get in Touch</h2>
@@ -562,7 +562,7 @@ export default function Index() {
             {/* Right - Contact Form */}
             <div className="space-y-8">
               <div>
-                <h3 className="text-[orange-500] text-xl font-bold mb-4">
+                <h3 className="text-orange-500 text-xl font-bold mb-4">
                   Message
                 </h3>
                 <h4 className="text-white text-2xl font-bold mb-6">
@@ -570,13 +570,13 @@ export default function Index() {
                 </h4>
 
                 <div className="space-y-4 mb-6">
-                  <p className="text-[orange-500] flex items-center gap-2">
+                  <p className="text-orange-500 flex items-center gap-2">
                     <span>Call Me:</span>
                     <span className="text-white font-bold">
                       +971 123 (456) 789
                     </span>
                   </p>
-                  <p className="text-[orange-500] flex items-center gap-2">
+                  <p className="text-orange-500 flex items-center gap-2">
                     <span>E-mail:</span>
                     <span className="text-white font-bold">
                       adhel@example.com
