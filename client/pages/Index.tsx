@@ -192,25 +192,25 @@ export default function Index() {
               </p>
 
               <div className="grid grid-cols-2 gap-6 mb-8">
-                <div className="bg-[gray-800] rounded-lg p-4 border-l-4 border-orange-500">
+                <div className="bg-gray-800 rounded-lg p-4 border-l-4 border-orange-500">
                   <h5 className="text-orange-500 text-sm font-bold mb-1">
                     Name
                   </h5>
                   <p className="text-white">Adhel Siddique</p>
                 </div>
-                <div className="bg-[gray-800] rounded-lg p-4 border-l-4 border-orange-500">
+                <div className="bg-gray-800 rounded-lg p-4 border-l-4 border-orange-500">
                   <h5 className="text-orange-500 text-sm font-bold mb-1">
                     Email
                   </h5>
                   <p className="text-white">adhel@example.com</p>
                 </div>
-                <div className="bg-[gray-800] rounded-lg p-4 border-l-4 border-orange-500">
+                <div className="bg-gray-800 rounded-lg p-4 border-l-4 border-orange-500">
                   <h5 className="text-orange-500 text-sm font-bold mb-1">
                     Location
                   </h5>
                   <p className="text-white">Dubai, UAE</p>
                 </div>
-                <div className="bg-[gray-800] rounded-lg p-4 border-l-4 border-orange-500">
+                <div className="bg-gray-800 rounded-lg p-4 border-l-4 border-orange-500">
                   <h5 className="text-orange-500 text-sm font-bold mb-1">
                     Phone
                   </h5>
