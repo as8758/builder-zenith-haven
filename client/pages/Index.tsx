@@ -159,7 +159,7 @@ export default function Index() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left - Image with frame */}
             <div className="relative">
-              <div className="bg-[black] p-8 border border-[orange-500] rounded-lg shadow-2xl">
+              <div className="bg-[black] p-8 border border-orange-500 rounded-lg shadow-2xl">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fc08b90088e804256b075841c946b0250%2Fbf640d761d1540e3bdf9c96db8089b5f?format=webp&width=800"
                   alt="Adhel Siddique Professional"
@@ -192,25 +192,25 @@ export default function Index() {
               </p>
 
               <div className="grid grid-cols-2 gap-6 mb-8">
-                <div className="bg-[gray-800] rounded-lg p-4 border-l-4 border-[orange-500]">
+                <div className="bg-[gray-800] rounded-lg p-4 border-l-4 border-orange-500">
                   <h5 className="text-orange-500 text-sm font-bold mb-1">
                     Name
                   </h5>
                   <p className="text-white">Adhel Siddique</p>
                 </div>
-                <div className="bg-[gray-800] rounded-lg p-4 border-l-4 border-[orange-500]">
+                <div className="bg-[gray-800] rounded-lg p-4 border-l-4 border-orange-500">
                   <h5 className="text-orange-500 text-sm font-bold mb-1">
                     Email
                   </h5>
                   <p className="text-white">adhel@example.com</p>
                 </div>
-                <div className="bg-[gray-800] rounded-lg p-4 border-l-4 border-[orange-500]">
+                <div className="bg-[gray-800] rounded-lg p-4 border-l-4 border-orange-500">
                   <h5 className="text-orange-500 text-sm font-bold mb-1">
                     Location
                   </h5>
                   <p className="text-white">Dubai, UAE</p>
                 </div>
-                <div className="bg-[gray-800] rounded-lg p-4 border-l-4 border-[orange-500]">
+                <div className="bg-[gray-800] rounded-lg p-4 border-l-4 border-orange-500">
                   <h5 className="text-orange-500 text-sm font-bold mb-1">
                     Phone
                   </h5>
@@ -270,7 +270,7 @@ export default function Index() {
             ].map((service, index) => (
               <Card
                 key={index}
-                className="bg-[gray-900] border-[orange-500] p-6 hover:bg-[gray-900]/80 transition-colors"
+                className="bg-[gray-900] border-orange-500 p-6 hover:bg-[gray-900]/80 transition-colors"
               >
                 <CardContent className="p-0">
                   <div className="mb-4">{service.icon}</div>
@@ -332,7 +332,7 @@ export default function Index() {
                     <div className="w-8 h-8 bg-orange-500 rounded-full"></div>
                     <div className="w-12 h-0.5 bg-orange-500"></div>
                   </div>
-                  <Card className="bg-[gray-900] border-[orange-500] p-6 flex-1">
+                  <Card className="bg-[gray-900] border-orange-500 p-6 flex-1">
                     <CardContent className="p-0">
                       <div className="flex justify-between items-start mb-4">
                         <div>
@@ -384,7 +384,7 @@ export default function Index() {
 
           {/* Project filters */}
           <div className="flex justify-center mb-16">
-            <div className="flex gap-8 p-2 border border-[orange-500] rounded-full">
+            <div className="flex gap-8 p-2 border border-orange-500 rounded-full">
               {["Data Analysis", "BI Dashboard", "ML Models", "Automation"].map(
                 (filter) => (
                   <button
@@ -500,7 +500,7 @@ export default function Index() {
             ].map((testimonial, index) => (
               <Card
                 key={index}
-                className="bg-[gray-900] border-[orange-500] p-6"
+                className="bg-[gray-900] border-orange-500 p-6"
               >
                 <CardContent className="p-0">
                   <div className="flex items-center gap-2 mb-4">
@@ -550,7 +550,7 @@ export default function Index() {
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Left - Image */}
             <div className="relative">
-              <div className="bg-[black] p-8 border border-[orange-500] rounded-lg shadow-2xl">
+              <div className="bg-[black] p-8 border border-orange-500 rounded-lg shadow-2xl">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fc08b90088e804256b075841c946b0250%2F750041d28f8643e6b5ac9909841613d3?format=webp&width=800"
                   alt="Contact Adhel Siddique"
@@ -628,13 +628,13 @@ export default function Index() {
             <div className="flex gap-4">
               {/* Social Icons */}
               <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center">
-                <div className="w-6 h-6 border-2 border-[orange-500] rounded"></div>
+                <div className="w-6 h-6 border-2 border-orange-500 rounded"></div>
               </div>
               <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center">
-                <div className="w-6 h-6 border-2 border-[orange-500] rounded"></div>
+                <div className="w-6 h-6 border-2 border-orange-500 rounded"></div>
               </div>
               <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center">
-                <div className="w-6 h-6 border-2 border-[orange-500] rounded"></div>
+                <div className="w-6 h-6 border-2 border-orange-500 rounded"></div>
               </div>
             </div>
           </div>
