@@ -30,7 +30,7 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative min-h-screen bg-[black] overflow-hidden">
+            <section className="relative min-h-screen bg-black overflow-hidden">
         {/* Background blur effects */}
         <div
           className="absolute inset-0 opacity-20"
