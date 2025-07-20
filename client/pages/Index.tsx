@@ -94,7 +94,7 @@ export default function Index() {
               <div>
                 <h1 className="text-6xl lg:text-7xl font-bold leading-tight">
                   <span className="text-white">Hello</span>
-                  <span className="text-[orange-500]">.</span>
+                                    <span className="text-orange-500">.</span>
                 </h1>
                 <div className="mt-4">
                   <div className="w-12 h-0.5 bg-[orange-500] mb-4"></div>
