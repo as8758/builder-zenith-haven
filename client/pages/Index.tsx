@@ -57,13 +57,13 @@ export default function Index() {
               <div className="hidden md:flex items-center gap-16">
                 <a
                   href="#about"
-                  className="text-[orange-500] text-lg hover:text-white transition-colors"
+                                    className="text-orange-500 text-lg hover:text-white transition-colors"
                 >
                   About me
                 </a>
                 <a
                   href="#services"
-                  className="text-[orange-500] text-lg hover:text-white transition-colors"
+                                    className="text-orange-500 text-lg hover:text-white transition-colors"
                 >
                   Service
                 </a>
@@ -72,13 +72,13 @@ export default function Index() {
             <div className="hidden md:flex items-center gap-16">
               <a
                 href="#portfolio"
-                className="text-[orange-500] text-lg hover:text-white transition-colors"
+                                  className="text-orange-500 text-lg hover:text-white transition-colors"
               >
                 Portfolio
               </a>
               <a
                 href="#contact"
-                className="text-[orange-500] text-lg hover:text-white transition-colors"
+                                  className="text-orange-500 text-lg hover:text-white transition-colors"
               >
                 Contact
               </a>
