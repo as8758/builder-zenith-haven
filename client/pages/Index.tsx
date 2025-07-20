@@ -97,7 +97,7 @@ export default function Index() {
                                     <span className="text-orange-500">.</span>
                 </h1>
                 <div className="mt-4">
-                  <div className="w-12 h-0.5 bg-[orange-500] mb-4"></div>
+                  <div className="w-12 h-0.5 bg-orange-500 mb-4"></div>
                   <h2 className="text-2xl lg:text-3xl text-orange-500 font-medium">
                     I am Adhel Siddique
                   </h2>
@@ -107,7 +107,7 @@ export default function Index() {
                 </div>
               </div>
 
-              <Button className="bg-[orange-500] text-black hover:bg-[orange-500]/90 px-8 py-6 text-lg font-medium rounded-lg">
+              <Button className="bg-orange-500 text-black hover:bg-orange-500/90 px-8 py-6 text-lg font-medium rounded-lg">
                 <Download className="w-5 h-5 mr-3" />
                 Download CV
               </Button>
@@ -115,7 +115,7 @@ export default function Index() {
 
             {/* Right Content - Image */}
             <div className="relative">
-              <div className="w-full bg-[orange-500] rounded-lg overflow-hidden">
+              <div className="w-full bg-orange-500 rounded-lg overflow-hidden">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fc08b90088e804256b075841c946b0250%2F750041d28f8643e6b5ac9909841613d3?format=webp&width=800"
                   alt="Adhel Siddique"
@@ -143,7 +143,7 @@ export default function Index() {
       </section>
 
       {/* Divider */}
-      <div className="h-20 bg-[orange-500]"></div>
+      <div className="h-20 bg-orange-500"></div>
 
       {/* About Section */}
       <section id="about" className="bg-[black] py-24">
@@ -153,7 +153,7 @@ export default function Index() {
               Biography
             </h3>
             <h2 className="text-white text-5xl font-bold mb-8">Who am I?</h2>
-            <div className="w-16 h-1 bg-[orange-500] mx-auto"></div>
+            <div className="w-16 h-1 bg-orange-500 mx-auto"></div>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -171,7 +171,7 @@ export default function Index() {
                 {Array.from({ length: 64 }).map((_, i) => (
                   <div
                     key={i}
-                    className="w-1 h-1 bg-[orange-500] rounded-full opacity-60"
+                    className="w-1 h-1 bg-orange-500 rounded-full opacity-60"
                   ></div>
                 ))}
               </div>
@@ -218,7 +218,7 @@ export default function Index() {
                 </div>
               </div>
 
-              <Button className="bg-[orange-500] text-black hover:bg-[orange-500]/90 px-8 py-3 rounded-lg">
+              <Button className="bg-orange-500 text-black hover:bg-orange-500/90 px-8 py-3 rounded-lg">
                 <Download className="w-4 h-4 mr-2" />
                 Download CV
               </Button>
@@ -283,7 +283,7 @@ export default function Index() {
                   <p className="text-[#C5B8A6] text-sm leading-relaxed mb-6">
                     {service.description}
                   </p>
-                  <div className="w-12 h-1 bg-[orange-500] rounded"></div>
+                  <div className="w-12 h-1 bg-orange-500 rounded"></div>
                 </CardContent>
               </Card>
             ))}
@@ -329,8 +329,8 @@ export default function Index() {
               ].map((skill, index) => (
                 <div key={index} className="flex items-start gap-8">
                   <div className="flex items-center gap-4">
-                    <div className="w-8 h-8 bg-[orange-500] rounded-full"></div>
-                    <div className="w-12 h-0.5 bg-[orange-500]"></div>
+                    <div className="w-8 h-8 bg-orange-500 rounded-full"></div>
+                    <div className="w-12 h-0.5 bg-orange-500"></div>
                   </div>
                   <Card className="bg-[gray-900] border-[orange-500] p-6 flex-1">
                     <CardContent className="p-0">
@@ -370,7 +370,7 @@ export default function Index() {
       </section>
 
       {/* Divider */}
-      <div className="h-20 bg-[orange-500]"></div>
+      <div className="h-20 bg-orange-500"></div>
 
       {/* Projects Section */}
       <section id="portfolio" className="bg-[gray-900] py-24">
@@ -389,7 +389,7 @@ export default function Index() {
                 (filter) => (
                   <button
                     key={filter}
-                    className="px-6 py-2 text-orange-500 font-bold hover:bg-[orange-500] hover:text-black transition-colors rounded-full"
+                    className="px-6 py-2 text-orange-500 font-bold hover:bg-orange-500 hover:text-black transition-colors rounded-full"
                   >
                     {filter}
                   </button>
@@ -544,7 +544,7 @@ export default function Index() {
               Contact Info
             </h3>
             <h2 className="text-white text-5xl font-bold">Get in Touch</h2>
-            <div className="w-16 h-1 bg-[orange-500] mx-auto mt-8"></div>
+            <div className="w-16 h-1 bg-orange-500 mx-auto mt-8"></div>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-16">
@@ -610,7 +610,7 @@ export default function Index() {
                 />
               </div>
 
-              <Button className="bg-[orange-500] text-black hover:bg-[orange-500]/90 px-12 py-4 text-xl font-medium rounded-lg">
+              <Button className="bg-orange-500 text-black hover:bg-orange-500/90 px-12 py-4 text-xl font-medium rounded-lg">
                 Send Message
               </Button>
             </div>
@@ -619,7 +619,7 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[orange-500] py-12">
+      <footer className="bg-orange-500 py-12">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center">
             <p className="text-black text-xl">
