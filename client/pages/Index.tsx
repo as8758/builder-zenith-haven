@@ -270,7 +270,7 @@ export default function Index() {
             ].map((service, index) => (
               <Card
                 key={index}
-                className="bg-[gray-900] border-orange-500 p-6 hover:bg-[gray-900]/80 transition-colors"
+                className="bg-gray-900 border-orange-500 p-6 hover:bg-gray-900/80 transition-colors"
               >
                 <CardContent className="p-0">
                   <div className="mb-4">{service.icon}</div>
@@ -332,7 +332,7 @@ export default function Index() {
                     <div className="w-8 h-8 bg-orange-500 rounded-full"></div>
                     <div className="w-12 h-0.5 bg-orange-500"></div>
                   </div>
-                  <Card className="bg-[gray-900] border-orange-500 p-6 flex-1">
+                  <Card className="bg-gray-900 border-orange-500 p-6 flex-1">
                     <CardContent className="p-0">
                       <div className="flex justify-between items-start mb-4">
                         <div>
@@ -373,7 +373,7 @@ export default function Index() {
       <div className="h-20 bg-orange-500"></div>
 
       {/* Projects Section */}
-      <section id="portfolio" className="bg-[gray-900] py-24">
+      <section id="portfolio" className="bg-gray-900 py-24">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
             <h3 className="text-orange-500 text-xl mb-4 uppercase tracking-wide">
@@ -500,7 +500,7 @@ export default function Index() {
             ].map((testimonial, index) => (
               <Card
                 key={index}
-                className="bg-[gray-900] border-orange-500 p-6"
+                className="bg-gray-900 border-orange-500 p-6"
               >
                 <CardContent className="p-0">
                   <div className="flex items-center gap-2 mb-4">
@@ -590,23 +590,23 @@ export default function Index() {
                   <input
                     type="text"
                     placeholder="Name"
-                    className="bg-[gray-900] text-white p-4 rounded border-none focus:outline-none focus:ring-2 focus:ring-[orange-500]"
+                    className="bg-gray-900 text-white p-4 rounded border-none focus:outline-none focus:ring-2 focus:ring-[orange-500]"
                   />
                   <input
                     type="email"
                     placeholder="Email"
-                    className="bg-[gray-900] text-white p-4 rounded border-none focus:outline-none focus:ring-2 focus:ring-[orange-500]"
+                    className="bg-gray-900 text-white p-4 rounded border-none focus:outline-none focus:ring-2 focus:ring-[orange-500]"
                   />
                 </div>
                 <input
                   type="text"
                   placeholder="Subject"
-                  className="w-full bg-[gray-900] text-white p-4 rounded border-none focus:outline-none focus:ring-2 focus:ring-[orange-500]"
+                  className="w-full bg-gray-900 text-white p-4 rounded border-none focus:outline-none focus:ring-2 focus:ring-[orange-500]"
                 />
                 <textarea
                   placeholder="Your Message"
                   rows={6}
-                  className="w-full bg-[gray-900] text-white p-4 rounded border-none focus:outline-none focus:ring-2 focus:ring-[orange-500] resize-none"
+                  className="w-full bg-gray-900 text-white p-4 rounded border-none focus:outline-none focus:ring-2 focus:ring-[orange-500] resize-none"
                 />
               </div>
 
