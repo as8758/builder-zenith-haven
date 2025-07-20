@@ -18,615 +18,429 @@ import {
   Phone,
   Star,
   Users,
+  ChevronRight,
+  Menu,
+  Plus,
+  Code,
+  Database,
+  BarChart3,
+  Brain,
 } from "lucide-react";
 
 export default function Index() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gradient-from via-gradient-via to-gradient-to">
-      {/* Hero Section */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-black/20" />
-        <div className="relative z-10 container mx-auto px-4 py-20 md:py-32">
-          <div className="max-w-4xl mx-auto text-center text-white">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
-              ADHEL SIDDIQUE
-            </h1>
-            <p className="text-xl md:text-2xl font-light mb-8 text-blue-100">
-              Tech-Driven Data Analyst & Computing Sciences Student
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base mb-8">
-              <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
-                <MapPin className="h-4 w-4" />
-                Rochester, NY
+    <div className="min-h-screen bg-black text-white">
+      {/* Navigation */}
+      <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-sm border-b border-white/10">
+        <div className="container mx-auto px-4 py-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <div className="w-6 h-6 border-2 border-white/60 flex items-center justify-center">
+                <div className="w-2 h-2 bg-white/60"></div>
               </div>
-              <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
-                <Phone className="h-4 w-4" />
-                +1 (585) 230-3740
-              </div>
-              <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
-                <Mail className="h-4 w-4" />
-                adhelsiddique@gmail.com
-              </div>
+              <span className="text-sm font-bold tracking-wider">ADHEL—SIDDIQUE</span>
+              <span className="text-xs text-white/60">™</span>
             </div>
-            <Button
-              size="lg"
-              className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6"
-            >
-              View My Work
-              <ExternalLink className="ml-2 h-5 w-5" />
-            </Button>
+            <div className="flex items-center gap-8">
+              <button className="flex items-center gap-2 text-sm font-bold tracking-wide text-white/60 hover:text-white transition-colors">
+                <Plus className="h-4 w-4" />
+                NEW PROJECT
+              </button>
+              <button className="flex items-center gap-2 text-sm font-bold tracking-wide">
+                <Menu className="h-3 w-3" />
+                MENU
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-gradient-to-br from-orange-500/20 via-purple-500/20 to-blue-500/20 opacity-60"
+          style={{
+            backgroundImage: `radial-gradient(circle at 20% 50%, rgba(255, 165, 0, 0.3) 0%, transparent 50%), 
+                             radial-gradient(circle at 80% 20%, rgba(128, 0, 128, 0.3) 0%, transparent 50%), 
+                             radial-gradient(circle at 40% 80%, rgba(0, 100, 255, 0.3) 0%, transparent 50%)`
+          }}
+        />
+        <div className="relative z-10 container mx-auto px-4 py-32 text-center">
+          <div className="max-w-5xl mx-auto">
+            <h1 className="text-7xl md:text-9xl font-bold mb-8 leading-none">
+              <span className="text-white">HIGH-END </span>
+              <span className="text-white/60 italic font-normal">analytics</span>
+            </h1>
+            <h2 className="text-7xl md:text-9xl font-bold mb-12 text-white">
+              FOR BUSINESSES
+            </h2>
+            
+            <p className="text-lg text-white/80 max-w-md mb-12 leading-relaxed">
+              Hey! I'm Adhel, I've done it all – from data analysis, machine learning, and 
+              business intelligence all the way to automation development. I go always 
+              above and beyond and with most clients I work long-term, some like me so 
+              much they invite me to events. No BS.
+            </p>
+
+            <div className="flex items-center justify-center gap-8 mb-12 text-sm">
+              <div className="flex items-center gap-2">
+                <div className="flex">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-3 w-3 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <span className="text-white font-bold">5/5 (12)</span>
+              </div>
+              <div className="flex items-center gap-8">
+                <div className="flex items-center gap-2">
+                  <span className="text-white font-bold">3+</span>
+                  <div className="px-2 py-1 border border-white/60 text-xs">PROJECTS</div>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-white font-bold">2y</span>
+                  <div className="px-2 py-1 border border-white/60 text-xs">EXPERIENCE</div>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-white font-bold">0%</span>
+                  <div className="px-2 py-1 border border-white/60 text-xs">FAILED PROJECTS</div>
+                </div>
+              </div>
+              <button className="flex items-center gap-2 text-sm font-bold">
+                <ExternalLink className="h-4 w-4" />
+                SEE WORK
+              </button>
+            </div>
+
+            <div className="flex items-center justify-center gap-8 text-sm">
+              <div className="text-white/60">Trusted by 5+ businesses</div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Main Content */}
-      <div className="bg-background">
-        {/* Summary Section */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-                About Me
-              </h2>
-              <Card className="border-0 shadow-2xl">
-                <CardContent className="p-8">
-                  <p className="text-lg leading-relaxed text-muted-foreground">
-                    Tech-driven Data Analyst with expertise in{" "}
-                    <strong>Power BI, SQL, Python, and Azure</strong>. Skilled
-                    at transforming complex sensor and telematics data into
-                    actionable insights to enhance product performance and
-                    customer experience. Proven track record in creating
-                    effective dashboards and reports, while collaborating with
-                    cross-functional teams to drive continuous improvement.
-                    Passionate about leveraging analytical skills in dynamic,
-                    data-driven environments.
-                  </p>
-                </CardContent>
-              </Card>
+      {/* Project Showcase */}
+      <section className="py-32 bg-black">
+        <div className="container mx-auto px-4">
+          {/* Project 1 */}
+          <div className="flex flex-col lg:flex-row items-center gap-16 mb-32">
+            <div className="lg:w-1/2">
+              <div className="aspect-video bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-lg border border-white/10 flex items-center justify-center">
+                <div className="text-center">
+                  <Database className="h-16 w-16 text-white/60 mx-auto mb-4" />
+                  <p className="text-white/60">IoT Data Analysis Dashboard</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4 mt-4 text-sm">
+                <span className="text-white font-bold">Project</span>
+                <div className="px-2 py-1 border border-white/60 text-xs">ANALYSIS</div>
+                <div className="px-2 py-1 border border-white/60 text-xs">DASHBOARD</div>
+                <span className="text-white/60">/</span>
+                <div className="px-2 py-1 border border-white/60 text-xs">BUSINESS PROJECT</div>
+              </div>
             </div>
-          </div>
-        </section>
-
-        {/* Experience Section */}
-        <section className="py-20 bg-muted/30">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-              Experience
-            </h2>
-            <div className="max-w-4xl mx-auto space-y-8">
-              <Card className="border-0 shadow-xl">
-                <CardHeader>
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                    <div>
-                      <CardTitle className="text-xl">
-                        Business Analyst
-                      </CardTitle>
-                      <CardDescription className="text-lg font-medium text-primary">
-                        SIROCO LLC
-                      </CardDescription>
-                    </div>
-                    <div className="flex items-center gap-2 text-muted-foreground mt-2 md:mt-0">
-                      <Calendar className="h-4 w-4" />
-                      Oct 2024 - Jan 2025
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    Remote, United States
-                  </p>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li>
-                      • Monitored and analyzed business data to identify trends,
-                      anomalies, and actionable insights, leveraging statistical
-                      analysis and time-series data techniques
-                    </li>
-                    <li>
-                      • Developed and maintained interactive dashboards and
-                      reports using Power BI and SQL, effectively visualizing
-                      performance metrics
-                    </li>
-                    <li>
-                      • Collaborated with cross-functional teams to optimize
-                      processes and enhance data-driven decision-making
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              <Card className="border-0 shadow-xl">
-                <CardHeader>
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                    <div>
-                      <CardTitle className="text-xl">Brand Promoter</CardTitle>
-                      <CardDescription className="text-lg font-medium text-primary">
-                        Sketches
-                      </CardDescription>
-                    </div>
-                    <div className="flex items-center gap-2 text-muted-foreground mt-2 md:mt-0">
-                      <Calendar className="h-4 w-4" />
-                      May 2023 - Jul 2023
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    Dubai, UAE
-                  </p>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li>
-                      • Engaged customers with product demos and upcoming
-                      offers, ensuring clear communication and positive brand
-                      representation
-                    </li>
-                    <li>
-                      • Collected feedback and handled inquiries with confidence
-                      to support customer satisfaction
-                    </li>
-                    <li>
-                      • Utilized strong communication skills to connect with
-                      customers and drive sales
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              <Card className="border-0 shadow-xl">
-                <CardHeader>
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                    <div>
-                      <CardTitle className="text-xl">Sales Associate</CardTitle>
-                      <CardDescription className="text-lg font-medium text-primary">
-                        Threads, Time
-                      </CardDescription>
-                    </div>
-                    <div className="flex items-center gap-2 text-muted-foreground mt-2 md:mt-0">
-                      <Calendar className="h-4 w-4" />
-                      Apr 2021 - Dec 2021
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    Dubai, UAE
-                  </p>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li>
-                      • Assisted over 80 customers daily by guiding them to
-                      appropriate products and addressing inquiries effectively
-                    </li>
-                    <li>
-                      • Supported team operations through accurate cash register
-                      handling, systematic inventory organization, and precise
-                      product labeling
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
-
-        {/* Education Section */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-              Education
-            </h2>
-            <div className="max-w-4xl mx-auto space-y-6">
-              <Card className="border-0 shadow-xl">
-                <CardHeader>
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 bg-primary/10 rounded-lg">
-                      <GraduationCap className="h-6 w-6 text-primary" />
-                    </div>
-                    <div className="flex-1">
-                                            <CardTitle className="text-xl">
-                        BSc, Computing and Information Technologies
-                      </CardTitle>
-                      <CardDescription className="text-lg font-medium text-primary">
-                        Rochester Institute of Technology, Dubai
-                      </CardDescription>
-                      <p className="text-sm text-muted-foreground mt-2">
-                        Expected Dec 2025 • Cumulative GPA: 3.5 • Minor: Web Development
-                      </p>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-2">
-                      <Award className="h-4 w-4 text-primary" />
-                                            <span className="text-sm">
-                        Dean's List - Recognized for academic excellence four
-                        times
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Award className="h-4 w-4 text-primary" />
-                      <span className="text-sm">
-                        40% scholarship towards tuition
-                      </span>
-                    </div>
-                                        <div className="flex items-center gap-2">
-                      <Award className="h-4 w-4 text-primary" />
-                      <span className="text-sm">
-                        Global Scholarship Program: $3,270 USD (granted to only
-                        one student per semester)
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Award className="h-4 w-4 text-primary" />
-                      <span className="text-sm">
-                        Active member of AIRC (Artificial Intelligence & Robotics Club)
-                      </span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <div className="grid md:grid-cols-2 gap-6">
-                <Card className="border-0 shadow-lg">
-                  <CardHeader>
-                    <CardTitle className="text-lg">
-                      Higher Secondary Education
-                    </CardTitle>
-                    <CardDescription>Vijayagiri Public School</CardDescription>
-                    <p className="text-sm text-muted-foreground">
-                      PCMC • May 2021
-                    </p>
-                  </CardHeader>
-                </Card>
-
-                <Card className="border-0 shadow-lg">
-                  <CardHeader>
-                    <CardTitle className="text-lg">
-                      Secondary Education
-                    </CardTitle>
-                    <CardDescription>
-                      Gems Our Own Indian School
-                    </CardDescription>
-                    <p className="text-sm text-muted-foreground">
-                      CBSE • Dec 2019
-                    </p>
-                  </CardHeader>
-                </Card>
+            <div className="lg:w-1/2">
+              <h3 className="text-3xl font-bold mb-6 text-white">
+                Use your existing data
+              </h3>
+              <div className="space-y-4 text-white/70">
+                <div className="flex items-start gap-3">
+                  <div className="w-3 h-3 bg-white/60 rounded-full mt-2"></div>
+                  <span>Transform complex sensor and telematics data into actionable insights</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-3 h-3 bg-white/60 rounded-full mt-2"></div>
+                  <span>Leverage Power BI and SQL for comprehensive data visualization</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-3 h-3 bg-white/60 rounded-full mt-2"></div>
+                  <span>Generated reports enhance product performance and customer experience</span>
+                </div>
               </div>
             </div>
           </div>
-        </section>
 
-        {/* Skills Section */}
-        <section className="py-20 bg-muted/30">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-              Technical Skills
-            </h2>
-            <div className="max-w-4xl mx-auto">
-              <div className="grid md:grid-cols-2 gap-8">
-                <Card className="border-0 shadow-xl">
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                      <div className="p-2 bg-primary/10 rounded-lg">
-                        <Star className="h-5 w-5 text-primary" />
-                      </div>
-                      Data Analysis & Visualization
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="secondary">Data Analysis</Badge>
-                      <Badge variant="secondary">SQL</Badge>
-                      <Badge variant="secondary">Statistical Analysis</Badge>
-                      <Badge variant="secondary">
-                        Time-Series Data Analysis
-                      </Badge>
-                      <Badge variant="secondary">Data Visualization</Badge>
-                      <Badge variant="secondary">Power BI</Badge>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-0 shadow-xl">
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                      <div className="p-2 bg-primary/10 rounded-lg">
-                        <Star className="h-5 w-5 text-primary" />
-                      </div>
-                      Programming & Tools
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="secondary">Python</Badge>
-                      <Badge variant="secondary">Java</Badge>
-                      <Badge variant="secondary">Excel/Google Sheets</Badge>
-                      <Badge variant="secondary">AWS</Badge>
-                      <Badge variant="secondary">Microsoft Azure</Badge>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-0 shadow-xl">
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                      <div className="p-2 bg-primary/10 rounded-lg">
-                        <Star className="h-5 w-5 text-primary" />
-                      </div>
-                      Domain Expertise
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="secondary">IoT Systems</Badge>
-                      <Badge variant="secondary">
-                        Hardware-Related Experience
-                      </Badge>
-                      <Badge variant="secondary">Robotics</Badge>
-                      <Badge variant="secondary">AI & Machine Learning</Badge>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-0 shadow-xl">
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                      <div className="p-2 bg-primary/10 rounded-lg">
-                        <Users className="h-5 w-5 text-primary" />
-                      </div>
-                      Soft Skills
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="secondary">Problem-Solving</Badge>
-                      <Badge variant="secondary">Communication</Badge>
-                      <Badge variant="secondary">Team Collaboration</Badge>
-                      <Badge variant="secondary">Leadership</Badge>
-                    </div>
-                  </CardContent>
-                </Card>
+          {/* Project 2 */}
+          <div className="flex flex-col lg:flex-row-reverse items-center gap-16 mb-32">
+            <div className="lg:w-1/2">
+              <div className="aspect-video bg-gradient-to-br from-green-500/20 to-blue-500/20 rounded-lg border border-white/10 flex items-center justify-center">
+                <div className="text-center">
+                  <Brain className="h-16 w-16 text-white/60 mx-auto mb-4" />
+                  <p className="text-white/60">AI-Powered Robotics System</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4 mt-4 text-sm">
+                <span className="text-white font-bold">Project</span>
+                <div className="px-2 py-1 border border-white/60 text-xs">AI</div>
+                <div className="px-2 py-1 border border-white/60 text-xs">ROBOTICS</div>
+                <span className="text-white/60">/</span>
+                <div className="px-2 py-1 border border-white/60 text-xs">ACADEMIC PROJECT</div>
+              </div>
+            </div>
+            <div className="lg:w-1/2">
+              <h3 className="text-3xl font-bold mb-6 text-white">
+                Bring in your AI innovations
+              </h3>
+              <div className="space-y-4 text-white/70">
+                <div className="flex items-start gap-3">
+                  <div className="w-3 h-3 bg-white/60 rounded-full mt-2"></div>
+                  <span>Developed sophisticated system for dual-arm robot control</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-3 h-3 bg-white/60 rounded-full mt-2"></div>
+                  <span>Implemented resistor identification and classification algorithms</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-3 h-3 bg-white/60 rounded-full mt-2"></div>
+                  <span>Demonstrated precision sorting with AI-driven technologies</span>
+                </div>
               </div>
             </div>
           </div>
-        </section>
 
-        {/* Certificates Section */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-              Certifications & Achievements
-            </h2>
-            <div className="max-w-4xl mx-auto">
-              <div className="grid md:grid-cols-2 gap-6">
-                <Card className="border-0 shadow-lg">
-                  <CardContent className="p-6">
-                    <div className="flex items-start gap-3">
-                      <Award className="h-5 w-5 text-primary mt-1" />
-                      <div>
-                        <h4 className="font-semibold">
-                          Microsoft Certified: Azure Fundamentals
-                        </h4>
-                        <p className="text-sm text-muted-foreground">
-                          Cloud Computing Certification
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-0 shadow-lg">
-                  <CardContent className="p-6">
-                    <div className="flex items-start gap-3">
-                      <Award className="h-5 w-5 text-primary mt-1" />
-                      <div>
-                        <h4 className="font-semibold">
-                          PL-300 Certified: Microsoft Power BI Data Analyst
-                        </h4>
-                        <p className="text-sm text-muted-foreground">
-                          Data Analytics Certification
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-0 shadow-lg">
-                  <CardContent className="p-6">
-                    <div className="flex items-start gap-3">
-                      <Award className="h-5 w-5 text-primary mt-1" />
-                      <div>
-                        <h4 className="font-semibold">
-                          CS50P – Harvard's Introduction to Programming with
-                          Python
-                        </h4>
-                        <p className="text-sm text-muted-foreground">
-                          Programming Certification
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-0 shadow-lg">
-                  <CardContent className="p-6">
-                    <div className="flex items-start gap-3">
-                      <Award className="h-5 w-5 text-primary mt-1" />
-                      <div>
-                        <h4 className="font-semibold">
-                          DEWA Robotics Championship Winner (2017)
-                        </h4>
-                        <p className="text-sm text-muted-foreground">
-                          Robotics Competition
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-0 shadow-lg">
-                  <CardContent className="p-6">
-                    <div className="flex items-start gap-3">
-                      <Award className="h-5 w-5 text-primary mt-1" />
-                      <div>
-                        <h4 className="font-semibold">
-                          First Place – Wollongong Annual Robotics Competition
-                          (2017)
-                        </h4>
-                        <p className="text-sm text-muted-foreground">
-                          Robotics Competition
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-0 shadow-lg">
-                  <CardContent className="p-6">
-                    <div className="flex items-start gap-3">
-                      <Award className="h-5 w-5 text-primary mt-1" />
-                      <div>
-                        <h4 className="font-semibold">
-                          Transforming Tasks with AI – TDRA
-                        </h4>
-                        <p className="text-sm text-muted-foreground">
-                          AI & Innovation
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
+          {/* Project 3 */}
+          <div className="flex flex-col lg:flex-row items-center gap-16">
+            <div className="lg:w-1/2">
+              <div className="aspect-video bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-lg border border-white/10 flex items-center justify-center">
+                <div className="text-center">
+                  <BarChart3 className="h-16 w-16 text-white/60 mx-auto mb-4" />
+                  <p className="text-white/60">Business Intelligence Platform</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4 mt-4 text-sm">
+                <span className="text-white font-bold">Project</span>
+                <div className="px-2 py-1 border border-white/60 text-xs">BI</div>
+                <div className="px-2 py-1 border border-white/60 text-xs">ANALYTICS</div>
+                <span className="text-white/60">/</span>
+                <div className="px-2 py-1 border border-white/60 text-xs">ENTERPRISE PROJECT</div>
+              </div>
+            </div>
+            <div className="lg:w-1/2">
+              <h3 className="text-3xl font-bold mb-6 text-white">
+                Visually monitor anything
+              </h3>
+              <div className="space-y-4 text-white/70">
+                <div className="flex items-start gap-3">
+                  <div className="w-3 h-3 bg-white/60 rounded-full mt-2"></div>
+                  <span>Monitor and analyze business data to identify trends and anomalies</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-3 h-3 bg-white/60 rounded-full mt-2"></div>
+                  <span>Create interactive dashboards with statistical analysis techniques</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-3 h-3 bg-white/60 rounded-full mt-2"></div>
+                  <span>Fine-tune data visualization with full precision control</span>
+                </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Recommendations Section */}
-        <section className="py-20 bg-muted/30">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-              Academic Recommendations
+      {/* Services/Expertise Section */}
+      <section className="py-32 bg-black">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-white/60 italic mb-4">
+              one-stop
             </h2>
-            <div className="max-w-6xl mx-auto space-y-8">
-              <Card className="border-0 shadow-xl">
-                <CardHeader>
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 bg-primary/10 rounded-full">
-                      <Star className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <CardTitle className="text-xl">
-                        Assoc. Prof. Martin Žagar, PhD, EMBA
-                      </CardTitle>
-                      <CardDescription className="text-lg">
-                        RIT Croatia - Scientific Advisor in Computer Science
-                      </CardDescription>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <blockquote className="text-muted-foreground italic leading-relaxed">
-                    "Adhel has shown an impressive set of abilities that are
-                    expected from an IT professional. He has shown he is good at
-                    working in teams, a fast learner, and an organized person.
-                    His expertise and knowledge in application development show
-                    advanced computational problem-solving skills with very
-                    promising final results. He is an outstanding scholar and
-                    member of our college community."
-                  </blockquote>
-                </CardContent>
-              </Card>
-
-              <Card className="border-0 shadow-xl">
-                <CardHeader>
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 bg-primary/10 rounded-full">
-                      <Star className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <CardTitle className="text-xl">
-                        Dr. Abhilasha Singh
-                      </CardTitle>
-                      <CardDescription className="text-lg">
-                        AIRC Coordinator and Postdoctoral Researcher - RIT Dubai
-                      </CardDescription>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <blockquote className="text-muted-foreground italic leading-relaxed">
-                    "One of the most remarkable projects Adhel undertook was his
-                    work on the Yumi project, where he developed a sophisticated
-                    system for sorting resistors. He demonstrated an impressive
-                    level of problem-solving and technical knowledge,
-                    programming a dual-arm robot to identify, classify, and sort
-                    resistors with precision. His passion for AI-driven
-                    technologies is evident in his approach to problem-solving."
-                  </blockquote>
-                </CardContent>
-              </Card>
-
-              <Card className="border-0 shadow-xl">
-                <CardHeader>
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 bg-primary/10 rounded-full">
-                      <Star className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <CardTitle className="text-xl">
-                        Dr. Omar Abdul Latif
-                      </CardTitle>
-                      <CardDescription className="text-lg">
-                        Assistant Professor - RIT Dubai
-                      </CardDescription>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <blockquote className="text-muted-foreground italic leading-relaxed">
-                    "Mr. Siddique always maintained very good grades and pinned
-                    himself in the top 10% of the class. He is a perceptive and
-                    sharp student with a high aptitude for problem solving. His
-                    mind works in a structured way that is simply remarkable and
-                    perfect for academic research. His endless curiosity
-                    combined with his willingness to take risks leads me to
-                    believe there will be no limit to his growth."
-                  </blockquote>
-                </CardContent>
-              </Card>
-            </div>
+            <h3 className="text-6xl font-bold text-white">
+              SOLUTION TO YOUR ENTIRE DATA NEEDS
+            </h3>
           </div>
-        </section>
 
-        {/* Contact Section */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <div className="max-w-2xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                Let's Connect
-              </h2>
-              <p className="text-lg text-muted-foreground mb-8">
-                Interested in collaborating or learning more about my work? I'd
-                love to hear from you.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="text-lg px-8 py-6">
-                  <Mail className="mr-2 h-5 w-5" />
-                  Email Me
-                </Button>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="text-lg px-8 py-6"
-                >
-                  <Phone className="mr-2 h-5 w-5" />
-                  Call Me
-                </Button>
+          <div className="max-w-4xl mx-auto space-y-1">
+            {/* Service 1 */}
+            <div className="border-t border-white/20 py-8 flex items-center justify-between group hover:bg-white/5 transition-colors px-8">
+              <h4 className="text-3xl font-medium text-white group-hover:text-white transition-colors">
+                DATA ANALYSIS SPRINT
+              </h4>
+              <div className="flex items-center gap-4">
+                <div className="px-3 py-1 border border-white/60 text-xs text-white/60">
+                  50% DEPOSIT
+                </div>
+                <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                  <ChevronRight className="h-6 w-6 text-black" />
+                </div>
+              </div>
+            </div>
+
+            {/* Service 2 */}
+            <div className="border-t border-white/20 py-8 flex items-center justify-between group hover:bg-white/5 transition-colors px-8">
+              <h4 className="text-3xl font-medium text-white/60 group-hover:text-white transition-colors">
+                BUSINESS INTELLIGENCE SPRINT
+              </h4>
+              <div className="px-3 py-1 border border-white/60 text-xs text-white/60">
+                50% DEPOSIT
+              </div>
+            </div>
+
+            {/* Service 3 */}
+            <div className="border-t border-white/20 py-8 flex items-center justify-between group hover:bg-white/5 transition-colors px-8">
+              <h4 className="text-3xl font-medium text-white/60 group-hover:text-white transition-colors">
+                AI & AUTOMATION ON DEMAND
+              </h4>
+              <div className="px-3 py-1 border border-white/60 text-xs text-white/60">
+                MONTHLY PLAN
+              </div>
+            </div>
+
+            {/* Service 4 */}
+            <div className="border-t border-b border-white/20 py-8 flex items-center justify-between group hover:bg-white/5 transition-colors px-8">
+              <h4 className="text-3xl font-medium text-white/60 group-hover:text-white transition-colors">
+                CONSULTING SUPPORT
+              </h4>
+              <div className="px-3 py-1 border border-white/60 text-xs text-white/60">
+                ONE-TIME FREE
               </div>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-32 bg-black">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-6xl font-bold text-white mb-4">
+              Don't take my word for it.
+            </h2>
+            <h3 className="text-4xl text-white/60 italic">
+              Hear it directly from my professors.
+            </h3>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Testimonial 1 */}
+            <Card className="bg-black border border-white/20 p-8">
+              <CardContent className="p-0">
+                <div className="flex items-center gap-2 mb-6">
+                  <span className="text-white/60">[</span>
+                  <div className="flex">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-3 w-3 fill-yellow-400 text-yellow-400" />
+                    ))}
+                  </div>
+                  <span className="text-white/60">]</span>
+                </div>
+                
+                <p className="text-white/80 text-lg leading-relaxed mb-6">
+                  "Adhel has shown an impressive set of abilities that are expected from an IT professional. 
+                  He is an outstanding scholar and member of our college community."
+                </p>
+                
+                <div className="flex items-center gap-4">
+                  <div className="w-8 h-8 bg-gray-500 rounded-full"></div>
+                  <div>
+                    <p className="text-white text-sm font-medium">Martin Žagar</p>
+                    <p className="text-white/60 text-xs">[ HR ] [ PROFESSOR ] / [ FROM RIT ]</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Testimonial 2 */}
+            <Card className="bg-black border border-white/20 p-8">
+              <CardContent className="p-0">
+                <div className="flex items-center gap-2 mb-6">
+                  <span className="text-white/60">[</span>
+                  <div className="flex">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-3 w-3 fill-yellow-400 text-yellow-400" />
+                    ))}
+                  </div>
+                  <span className="text-white/60">]</span>
+                </div>
+                
+                <p className="text-white/80 text-lg leading-relaxed mb-6">
+                  "One of the most remarkable projects Adhel undertook was the Yumi project. 
+                  His passion for AI-driven technologies is evident in his approach to problem-solving."
+                </p>
+                
+                <div className="flex items-center gap-4">
+                  <div className="w-8 h-8 bg-gray-500 rounded-full"></div>
+                  <div>
+                    <p className="text-white text-sm font-medium">Abhilasha Singh</p>
+                    <p className="text-white/60 text-xs">[ AE ] [ RESEARCHER ] / [ FROM RIT ]</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Testimonial 3 */}
+            <Card className="bg-black border border-white/20 p-8">
+              <CardContent className="p-0">
+                <div className="flex items-center gap-2 mb-6">
+                  <span className="text-white/60">[</span>
+                  <div className="flex">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-3 w-3 fill-yellow-400 text-yellow-400" />
+                    ))}
+                  </div>
+                  <span className="text-white/60">]</span>
+                </div>
+                
+                <p className="text-white/80 text-lg leading-relaxed mb-6">
+                  "Mr. Siddique maintained very good grades and pinned himself in the top 10% of the class. 
+                  His endless curiosity combined with his willingness to take risks is remarkable."
+                </p>
+                
+                <div className="flex items-center gap-4">
+                  <div className="w-8 h-8 bg-gray-500 rounded-full"></div>
+                  <div>
+                    <p className="text-white text-sm font-medium">Omar Abdul Latif</p>
+                    <p className="text-white/60 text-xs">[ AE ] [ PROFESSOR ] / [ FROM RIT ]</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center mt-12">
+            <span className="text-white/60 text-sm">[ TESTIMONIALS ]</span>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="py-32 bg-black">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-8xl font-bold text-white mb-16">
+            LET'S BUILD IT
+          </h2>
+          
+          <div className="w-16 h-16 mx-auto mb-32 rounded-full bg-orange-500 flex items-center justify-center">
+            <Plus className="h-8 w-8 text-white" />
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto text-sm">
+            <div className="text-center">
+              <div className="flex items-center justify-center gap-2 mb-2">
+                <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                <span className="text-white font-bold">AVAILABLE NOW</span>
+                <div className="px-2 py-1 border border-white/60 text-xs text-white/60">GMT +4</div>
+              </div>
+            </div>
+            <div className="text-center">
+              <span className="text-white font-bold">REMOTE/DXB</span>
+              <div className="px-2 py-1 border border-white/60 text-xs text-white/60 inline-block ml-2">
+                25°15'N 55°18'E
+              </div>
+            </div>
+            <div className="text-center">
+              <div className="flex items-center justify-center gap-8">
+                <span className="text-white">Work</span>
+                <span className="text-white">Services</span>
+                <span className="text-white">Contact</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-16 text-white/80 text-sm">
+            Copyright © 2025 Adhel Siddique. All rights reserved.
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
