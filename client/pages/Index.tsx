@@ -47,10 +47,10 @@ export default function Index() {
           <div className="max-w-7xl mx-auto flex items-center justify-between">
             <div className="flex items-center gap-8">
               <div className="flex items-center gap-3">
-                <div className="w-3 h-3 rounded-full border-2 border-[orange-500] flex items-center justify-center">
-                  <div className="w-1 h-1 bg-[orange-500] rounded-full"></div>
+                                <div className="w-3 h-3 rounded-full border-2 border-orange-500 flex items-center justify-center">
+                  <div className="w-1 h-1 bg-orange-500 rounded-full"></div>
                 </div>
-                <span className="text-[orange-500] font-bold text-2xl">
+                <span className="text-orange-500 font-bold text-2xl">
                   ADHEL—SIDDIQUE
                 </span>
               </div>
