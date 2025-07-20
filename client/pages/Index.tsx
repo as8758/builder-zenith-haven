@@ -24,500 +24,428 @@ import {
   BarChart3,
   Brain,
   TrendingUp,
+  ChevronRight,
+  Menu,
+  Plus,
 } from "lucide-react";
 
 export default function Index() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-black text-white">
+      {/* Navigation */}
+      <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-sm border-b border-white/10">
+        <div className="container mx-auto px-4 py-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <div className="w-6 h-6 border-2 border-orange-500 flex items-center justify-center">
+                <div className="w-2 h-2 bg-orange-500"></div>
+              </div>
+              <span className="text-sm font-bold tracking-wider">ADHEL—SIDDIQUE</span>
+              <span className="text-xs text-white/60">™</span>
+            </div>
+            <div className="flex items-center gap-8">
+              <button className="flex items-center gap-2 text-sm font-bold tracking-wide text-white/60 hover:text-white transition-colors">
+                <Plus className="h-4 w-4" />
+                NEW PROJECT
+              </button>
+              <button className="flex items-center gap-2 text-sm font-bold tracking-wide">
+                <Menu className="h-3 w-3" />
+                MENU
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
       {/* Hero Section */}
-      <section className="relative min-h-screen bg-[#0A282E] overflow-hidden">
-        {/* Background blur effects */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div 
-          className="absolute inset-0 opacity-20"
+          className="absolute inset-0 bg-gradient-to-br from-orange-500/20 via-purple-500/20 to-blue-500/20 opacity-60"
           style={{
-            background: `
-              radial-gradient(ellipse 105px 192px at right top, rgba(217, 217, 217, 0.3) 0%, transparent 50%),
-              radial-gradient(ellipse 105px 192px at left center, rgba(217, 217, 217, 0.3) 0%, transparent 50%)
-            `
+            backgroundImage: `radial-gradient(circle at 20% 50%, rgba(255, 165, 0, 0.3) 0%, transparent 50%), 
+                             radial-gradient(circle at 80% 20%, rgba(128, 0, 128, 0.3) 0%, transparent 50%), 
+                             radial-gradient(circle at 40% 80%, rgba(0, 100, 255, 0.3) 0%, transparent 50%)`
           }}
         />
+        <div className="relative z-10 container mx-auto px-4 py-32 text-center">
+          <div className="max-w-5xl mx-auto">
+            <h1 className="text-7xl md:text-9xl font-bold mb-8 leading-none">
+              <span className="text-white">HIGH-END </span>
+              <span className="text-white/60 italic font-normal">analytics</span>
+            </h1>
+            <h2 className="text-7xl md:text-9xl font-bold mb-12 text-white">
+              FOR BUSINESSES
+            </h2>
+            
+            <p className="text-lg text-white/80 mb-12 leading-relaxed" style={{ maxWidth: '529px', margin: '0 0 48px 250px' }}>
+              Hey! I'm Adhel, I've done it all – from data analysis, machine learning, and 
+              business intelligence all the way to automation development. I go always 
+              above and beyond and with most clients I work long-term, some like me so 
+              much they invite me to events. No BS.
+            </p>
 
-        {/* Navigation */}
-        <nav className="relative z-10 px-4 py-6">
-          <div className="max-w-7xl mx-auto flex items-center justify-between">
-            <div className="flex items-center gap-8">
-              <div className="flex items-center gap-3">
-                <div className="w-3 h-3 rounded-full border-2 border-[#DAC5A7] flex items-center justify-center">
-                  <div className="w-1 h-1 bg-[#DAC5A7] rounded-full"></div>
+            <div className="flex items-center justify-center gap-8 mb-12 text-sm">
+              <div className="flex items-center gap-2">
+                <div className="flex">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-3 w-3 fill-yellow-400 text-yellow-400" />
+                  ))}
                 </div>
-                <span className="text-[#DAC5A7] font-bold text-2xl">Dizer</span>
+                <span className="text-white font-bold">5/5 (12)</span>
               </div>
-              <div className="hidden md:flex items-center gap-16">
-                <a href="#about" className="text-[#DAC5A7] text-lg hover:text-white transition-colors">About me</a>
-                <a href="#services" className="text-[#DAC5A7] text-lg hover:text-white transition-colors">Service</a>
+              <div className="flex items-center gap-8">
+                <div className="flex items-center gap-2">
+                  <span className="text-white font-bold">3+</span>
+                  <div className="px-2 py-1 border border-orange-500 text-xs">PROJECTS</div>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-white font-bold">2y</span>
+                  <div className="px-2 py-1 border border-orange-500 text-xs">EXPERIENCE</div>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-white font-bold">0%</span>
+                  <div className="px-2 py-1 border border-orange-500 text-xs">FAILED PROJECTS</div>
+                </div>
               </div>
+              <button className="flex items-center gap-2 text-sm font-bold">
+                <ExternalLink className="h-4 w-4" />
+                SEE WORK
+              </button>
             </div>
-            <div className="hidden md:flex items-center gap-16">
-              <a href="#portfolio" className="text-[#DAC5A7] text-lg hover:text-white transition-colors">Portfolio</a>
-              <a href="#contact" className="text-[#DAC5A7] text-lg hover:text-white transition-colors">Contact</a>
+
+            <div className="flex items-center justify-center gap-8 text-sm">
+              <div className="text-white/60">Trusted by 5+ businesses</div>
             </div>
           </div>
-        </nav>
+        </div>
+      </section>
 
-        {/* Hero Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 py-12">
-          <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
-            {/* Left Content */}
-            <div className="space-y-8">
-              <div>
-                <h1 className="text-6xl lg:text-7xl font-bold leading-tight">
-                  <span className="text-white">Hello</span>
-                  <span className="text-[#DAC5A7]">.</span>
-                </h1>
-                <div className="mt-4">
-                  <div className="w-12 h-0.5 bg-[#DAC5A7] mb-4"></div>
-                  <h2 className="text-2xl lg:text-3xl text-[#DAC5A7] font-medium">
-                    I am Adhel Siddique
-                  </h2>
-                  <h3 className="text-xl lg:text-2xl text-white font-medium mt-2">
-                    Professional Data Analyst & AI Developer
-                  </h3>
-                </div>
-              </div>
-
-              <Button className="bg-[#DAC5A7] text-black hover:bg-[#DAC5A7]/90 px-8 py-6 text-lg font-medium rounded-lg">
-                <Download className="w-5 h-5 mr-3" />
-                Download CV
-              </Button>
-            </div>
-
-            {/* Right Content - Image */}
-            <div className="relative">
-              <div className="w-full bg-[#DAC5A7] rounded-lg overflow-hidden">
+      {/* Project Showcase */}
+      <section className="py-32 bg-black">
+        <div className="container mx-auto px-4">
+          {/* Project 1 */}
+          <div className="flex flex-col lg:flex-row items-center gap-16 mb-32">
+            <div className="lg:w-1/2">
+              <div className="aspect-video bg-gradient-to-br from-orange-500/20 to-purple-500/20 rounded-lg border border-orange-500/30 flex items-center justify-center overflow-hidden">
                 <img 
                   src="https://cdn.builder.io/api/v1/image/assets%2Fc08b90088e804256b075841c946b0250%2F750041d28f8643e6b5ac9909841613d3?format=webp&width=800"
-                  alt="Adhel Siddique"
-                  className="w-full h-[600px] object-cover"
+                  alt="IoT Data Analysis Dashboard"
+                  className="w-full h-full object-cover"
                 />
+              </div>
+              <div className="flex items-center gap-4 mt-4 text-sm">
+                <span className="text-white font-bold">Project</span>
+                <div className="px-2 py-1 border border-orange-500 text-xs">ANALYSIS</div>
+                <div className="px-2 py-1 border border-orange-500 text-xs">DASHBOARD</div>
+                <span className="text-white/60">/</span>
+                <div className="px-2 py-1 border border-orange-500 text-xs">BUSINESS PROJECT</div>
+              </div>
+            </div>
+            <div className="lg:w-1/2">
+              <h3 className="text-3xl font-bold mb-6 text-white">
+                Use your existing data
+              </h3>
+              <div className="space-y-4 text-white/70">
+                <div className="flex items-start gap-3">
+                  <div className="w-3 h-3 bg-orange-500 rounded-full mt-2"></div>
+                  <span>Transform complex sensor and telematics data into actionable insights</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-3 h-3 bg-orange-500 rounded-full mt-2"></div>
+                  <span>Leverage Power BI and SQL for comprehensive data visualization</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-3 h-3 bg-orange-500 rounded-full mt-2"></div>
+                  <span>Generated reports enhance product performance and customer experience</span>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Bottom Hero Description */}
-          <div className="mt-12 lg:mt-24 max-w-md">
-            <p className="text-[#DAC5A7] text-lg leading-relaxed mb-6">
-              I am a Data Analyst & AI Developer. My specialty lies in transforming complex data into actionable insights. 
-              That's creativity in determining solutions that fit business goals.
-            </p>
-            <div className="flex items-center gap-4">
-              <span className="text-[#DAC5A7] text-2xl font-medium">Let's Talk</span>
-              <ArrowRight className="w-8 h-8 text-[#DAC5A7]" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Divider */}
-      <div className="h-20 bg-[#DAC5A7]"></div>
-
-      {/* About Section */}
-      <section id="about" className="bg-[#0A282E] py-24">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <h3 className="text-[#DAC5A7] text-xl mb-4 uppercase tracking-wide">Biography</h3>
-            <h2 className="text-white text-5xl font-bold mb-8">Who am I?</h2>
-            <div className="w-16 h-1 bg-[#DAC5A7] mx-auto"></div>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Left - Image with frame */}
-            <div className="relative">
-              <div className="bg-[#0A282E] p-8 border border-[#DAC5A7] rounded-lg shadow-2xl">
+          {/* Project 2 */}
+          <div className="flex flex-col lg:flex-row-reverse items-center gap-16 mb-32">
+            <div className="lg:w-1/2">
+              <div className="aspect-video bg-gradient-to-br from-orange-500/20 to-blue-500/20 rounded-lg border border-orange-500/30 flex items-center justify-center overflow-hidden">
                 <img 
                   src="https://cdn.builder.io/api/v1/image/assets%2Fc08b90088e804256b075841c946b0250%2Fbf640d761d1540e3bdf9c96db8089b5f?format=webp&width=800"
-                  alt="Adhel Siddique Professional"
-                  className="w-full h-[500px] object-cover rounded"
+                  alt="AI-Powered Robotics System"
+                  className="w-full h-full object-cover"
                 />
               </div>
-              {/* Decorative dots */}
-              <div className="absolute -left-8 -top-8 grid grid-cols-8 gap-2">
-                {Array.from({ length: 64 }).map((_, i) => (
-                  <div key={i} className="w-1 h-1 bg-[#DAC5A7] rounded-full opacity-60"></div>
-                ))}
+              <div className="flex items-center gap-4 mt-4 text-sm">
+                <span className="text-white font-bold">Project</span>
+                <div className="px-2 py-1 border border-orange-500 text-xs">AI</div>
+                <div className="px-2 py-1 border border-orange-500 text-xs">ROBOTICS</div>
+                <span className="text-white/60">/</span>
+                <div className="px-2 py-1 border border-orange-500 text-xs">ACADEMIC PROJECT</div>
               </div>
             </div>
-
-            {/* Right - Content */}
-            <div>
-              <h3 className="text-[#DAC5A7] text-xl mb-4">About Me</h3>
-              <h4 className="text-white text-2xl font-bold mb-6">Adhel Siddique's Details</h4>
-              
-              <p className="text-white text-lg leading-relaxed mb-8">
-                I specialize in transforming complex data into actionable business insights. With expertise in machine learning, 
-                business intelligence, and automation development, I help organizations make data-driven decisions that drive growth 
-                and innovation.
-              </p>
-
-              <div className="grid grid-cols-2 gap-6 mb-8">
-                <div className="bg-[#474949] rounded-lg p-4 border-l-4 border-[#DAC5A7]">
-                  <h5 className="text-[#DAC5A7] text-sm font-bold mb-1">Name</h5>
-                  <p className="text-white">Adhel Siddique</p>
+            <div className="lg:w-1/2">
+              <h3 className="text-3xl font-bold mb-6 text-white">
+                Bring in your AI innovations
+              </h3>
+              <div className="space-y-4 text-white/70">
+                <div className="flex items-start gap-3">
+                  <div className="w-3 h-3 bg-orange-500 rounded-full mt-2"></div>
+                  <span>Developed sophisticated system for dual-arm robot control</span>
                 </div>
-                <div className="bg-[#474949] rounded-lg p-4 border-l-4 border-[#DAC5A7]">
-                  <h5 className="text-[#DAC5A7] text-sm font-bold mb-1">Email</h5>
-                  <p className="text-white">adhel@example.com</p>
+                <div className="flex items-start gap-3">
+                  <div className="w-3 h-3 bg-orange-500 rounded-full mt-2"></div>
+                  <span>Implemented resistor identification and classification algorithms</span>
                 </div>
-                <div className="bg-[#474949] rounded-lg p-4 border-l-4 border-[#DAC5A7]">
-                  <h5 className="text-[#DAC5A7] text-sm font-bold mb-1">Location</h5>
-                  <p className="text-white">Dubai, UAE</p>
-                </div>
-                <div className="bg-[#474949] rounded-lg p-4 border-l-4 border-[#DAC5A7]">
-                  <h5 className="text-[#DAC5A7] text-sm font-bold mb-1">Phone</h5>
-                  <p className="text-white">+971-XXX-XXXX</p>
+                <div className="flex items-start gap-3">
+                  <div className="w-3 h-3 bg-orange-500 rounded-full mt-2"></div>
+                  <span>Demonstrated precision sorting with AI-driven technologies</span>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <Button className="bg-[#DAC5A7] text-black hover:bg-[#DAC5A7]/90 px-8 py-3 rounded-lg">
-                <Download className="w-4 h-4 mr-2" />
-                Download CV
-              </Button>
+          {/* Project 3 */}
+          <div className="flex flex-col lg:flex-row items-center gap-16">
+            <div className="lg:w-1/2">
+              <div className="aspect-video bg-gradient-to-br from-orange-500/20 to-pink-500/20 rounded-lg border border-orange-500/30 flex items-center justify-center overflow-hidden">
+                <img 
+                  src="https://cdn.builder.io/o/assets%2Fc08b90088e804256b075841c946b0250%2Ff2135de5e5ce44fdbd2e71ab50f2ae66?alt=media&token=1fe48924-5aa0-452c-888a-29664a81b486&apiKey=c08b90088e804256b075841c946b0250"
+                  alt="Business Intelligence Platform"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="flex items-center gap-4 mt-4 text-sm">
+                <span className="text-white font-bold">Project</span>
+                <div className="px-2 py-1 border border-orange-500 text-xs">BI</div>
+                <div className="px-2 py-1 border border-orange-500 text-xs">ANALYTICS</div>
+                <span className="text-white/60">/</span>
+                <div className="px-2 py-1 border border-orange-500 text-xs">ENTERPRISE PROJECT</div>
+              </div>
+            </div>
+            <div className="lg:w-1/2">
+              <h3 className="text-3xl font-bold mb-6 text-white">
+                Visually monitor anything
+              </h3>
+              <div className="space-y-4 text-white/70">
+                <div className="flex items-start gap-3">
+                  <div className="w-3 h-3 bg-orange-500 rounded-full mt-2"></div>
+                  <span>Monitor and analyze business data to identify trends and anomalies</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-3 h-3 bg-orange-500 rounded-full mt-2"></div>
+                  <span>Create interactive dashboards with statistical analysis techniques</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-3 h-3 bg-orange-500 rounded-full mt-2"></div>
+                  <span>Fine-tune data visualization with full precision control</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services Section */}
-      <section id="services" className="bg-[#0A282E] py-24">
-        <div className="max-w-7xl mx-auto px-4">
+      {/* Services/Expertise Section */}
+      <section className="py-32 bg-black">
+        <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h3 className="text-[#DAC5A7] text-xl mb-4 uppercase tracking-wide">Service</h3>
-            <h2 className="text-white text-5xl font-bold">What I Do?</h2>
+            <h2 className="text-4xl font-bold text-white/60 italic mb-4">
+              one-stop
+            </h2>
+            <h3 className="text-6xl font-bold text-white">
+              SOLUTION TO YOUR ENTIRE DATA NEEDS
+            </h3>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                number: "01.",
-                title: "Data Analysis",
-                description: "Transform raw data into meaningful insights using advanced statistical methods and visualization techniques.",
-                icon: <BarChart3 className="w-8 h-8 text-[#DAC5A7]" />
-              },
-              {
-                number: "02.",
-                title: "Business Intelligence",
-                description: "Create comprehensive BI solutions that drive strategic decision-making and business growth.",
-                icon: <TrendingUp className="w-8 h-8 text-[#DAC5A7]" />
-              },
-              {
-                number: "03.",
-                title: "Machine Learning",
-                description: "Develop AI models and automation solutions that optimize processes and predict outcomes.",
-                icon: <Brain className="w-8 h-8 text-[#DAC5A7]" />
-              },
-              {
-                number: "04.",
-                title: "Database Design",
-                description: "Design and optimize database systems for maximum performance and data integrity.",
-                icon: <Database className="w-8 h-8 text-[#DAC5A7]" />
-              }
-            ].map((service, index) => (
-              <Card key={index} className="bg-[#324548] border-[#DAC5A7] p-6 hover:bg-[#324548]/80 transition-colors">
-                <CardContent className="p-0">
-                  <div className="mb-4">{service.icon}</div>
-                  <h3 className="text-[#D4BD8E] text-4xl font-medium mb-4">{service.number}</h3>
-                  <h4 className="text-[#C5B8A6] text-2xl font-medium mb-4">{service.title}</h4>
-                  <p className="text-[#C5B8A6] text-sm leading-relaxed mb-6">{service.description}</p>
-                  <div className="w-12 h-1 bg-[#DAC5A7] rounded"></div>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="max-w-4xl mx-auto space-y-1">
+            {/* Service 1 */}
+            <div className="border-t border-white/20 py-8 flex items-center justify-between group hover:bg-white/5 transition-colors px-8">
+              <h4 className="text-3xl font-medium text-white group-hover:text-orange-500 transition-colors">
+                DATA ANALYSIS SPRINT
+              </h4>
+              <div className="flex items-center gap-4">
+                <div className="px-3 py-1 border border-orange-500 text-xs text-white/60">
+                  50% DEPOSIT
+                </div>
+                <div className="w-12 h-12 rounded-full bg-orange-500 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                  <ChevronRight className="h-6 w-6 text-black" />
+                </div>
+              </div>
+            </div>
+
+            {/* Service 2 */}
+            <div className="border-t border-white/20 py-8 flex items-center justify-between group hover:bg-white/5 transition-colors px-8">
+              <h4 className="text-3xl font-medium text-white/60 group-hover:text-orange-500 transition-colors">
+                BUSINESS INTELLIGENCE SPRINT
+              </h4>
+              <div className="px-3 py-1 border border-orange-500 text-xs text-white/60">
+                50% DEPOSIT
+              </div>
+            </div>
+
+            {/* Service 3 */}
+            <div className="border-t border-white/20 py-8 flex items-center justify-between group hover:bg-white/5 transition-colors px-8">
+              <h4 className="text-3xl font-medium text-white/60 group-hover:text-orange-500 transition-colors">
+                AI & AUTOMATION ON DEMAND
+              </h4>
+              <div className="px-3 py-1 border border-orange-500 text-xs text-white/60">
+                MONTHLY PLAN
+              </div>
+            </div>
+
+            {/* Service 4 */}
+            <div className="border-t border-b border-white/20 py-8 flex items-center justify-between group hover:bg-white/5 transition-colors px-8">
+              <h4 className="text-3xl font-medium text-white/60 group-hover:text-orange-500 transition-colors">
+                CONSULTING SUPPORT
+              </h4>
+              <div className="px-3 py-1 border border-orange-500 text-xs text-white/60">
+                ONE-TIME FREE
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Skills Section */}
-      <section className="bg-[#0A282E] py-24">
-        <div className="max-w-7xl mx-auto px-4">
+      {/* Testimonials */}
+      <section className="py-32 bg-black">
+        <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h3 className="text-[#DAC5A7] text-xl mb-4 uppercase tracking-wide">2+ Years Experience</h3>
-            <h2 className="text-white text-5xl font-bold">My Skills</h2>
+            <h2 className="text-6xl font-bold text-white mb-4">
+              Don't take my word for it.
+            </h2>
+            <h3 className="text-4xl text-white/60 italic">
+              Hear it directly from my professors.
+            </h3>
           </div>
 
-          <div className="space-y-8">
-            {/* Skills Timeline */}
-            <div className="space-y-6">
-              {[
-                {
-                  title: "Data Analysis & Visualization",
-                  institution: "Advanced Level (2022-2024)",
-                  description: "Expertise in Python, R, SQL, Power BI, and Tableau for comprehensive data analysis and visualization.",
-                  rating: 5.0
-                },
-                {
-                  title: "Machine Learning & AI",
-                  institution: "Intermediate Level (2023-2024)",
-                  description: "Proficient in scikit-learn, TensorFlow, and PyTorch for building predictive models and AI solutions.",
-                  rating: 5.0
-                },
-                {
-                  title: "Business Intelligence",
-                  institution: "Professional Level (2022-2024)",
-                  description: "Strategic BI implementation using modern tools and methodologies for enterprise solutions.",
-                  rating: 5.0
-                }
-              ].map((skill, index) => (
-                <div key={index} className="flex items-start gap-8">
-                  <div className="flex items-center gap-4">
-                    <div className="w-8 h-8 bg-[#DAC5A7] rounded-full"></div>
-                    <div className="w-12 h-0.5 bg-[#DAC5A7]"></div>
+          <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Testimonial 1 */}
+            <Card className="bg-black border border-orange-500/30 p-8">
+              <CardContent className="p-0">
+                <div className="flex items-center gap-2 mb-6">
+                  <span className="text-white/60">[</span>
+                  <div className="flex">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-3 w-3 fill-yellow-400 text-yellow-400" />
+                    ))}
                   </div>
-                  <Card className="bg-[#324548] border-[#DAC5A7] p-6 flex-1">
-                    <CardContent className="p-0">
-                      <div className="flex justify-between items-start mb-4">
-                        <div>
-                          <h4 className="text-white text-xl font-bold mb-2">{skill.title}</h4>
-                          <p className="text-[#DAC5A7] text-sm">{skill.institution}</p>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <div className="flex">
-                            {[...Array(5)].map((_, i) => (
-                              <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                            ))}
-                          </div>
-                          <span className="text-[#DAC5A7] text-sm">{skill.rating}</span>
-                        </div>
-                      </div>
-                      <p className="text-[#DAC5A7] leading-relaxed">{skill.description}</p>
-                    </CardContent>
-                  </Card>
+                  <span className="text-white/60">]</span>
                 </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Divider */}
-      <div className="h-20 bg-[#DAC5A7]"></div>
-
-      {/* Projects Section */}
-      <section id="portfolio" className="bg-[#324548] py-24">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <h3 className="text-[#DAC5A7] text-xl mb-4 uppercase tracking-wide">Portfolio</h3>
-            <h2 className="text-white text-5xl font-bold">Latest Projects</h2>
-          </div>
-
-          {/* Project filters */}
-          <div className="flex justify-center mb-16">
-            <div className="flex gap-8 p-2 border border-[#DAC5A7] rounded-full">
-              {["Data Analysis", "BI Dashboard", "ML Models", "Automation"].map((filter) => (
-                <button key={filter} className="px-6 py-2 text-[#DAC5A7] font-bold hover:bg-[#DAC5A7] hover:text-black transition-colors rounded-full">
-                  {filter}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Projects */}
-          <div className="space-y-16">
-            {[
-              {
-                title: "IoT Analytics Platform",
-                category: "Data Analysis",
-                description: "Comprehensive analytics platform for IoT sensor data processing and real-time insights.",
-                image: "https://cdn.builder.io/o/assets%2Fc08b90088e804256b075841c946b0250%2Ff2135de5e5ce44fdbd2e71ab50f2ae66?alt=media&token=1fe48924-5aa0-452c-888a-29664a81b486&apiKey=c08b90088e804256b075841c946b0250"
-              },
-              {
-                title: "Business Intelligence Dashboard",
-                category: "BI Dashboard", 
-                description: "Executive dashboard providing key business metrics and performance indicators for strategic decision making.",
-                image: "https://cdn.builder.io/api/v1/image/assets%2Fc08b90088e804256b075841c946b0250%2F9175e56b23c74a31947432f230bb7492?format=webp&width=800"
-              }
-            ].map((project, index) => (
-              <div key={index} className={`flex ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} items-center gap-16`}>
-                <div className="flex-1">
-                  <img 
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-80 object-cover rounded-lg"
-                  />
-                </div>
-                <div className="flex-1 space-y-6">
+                
+                <p className="text-white/80 text-lg leading-relaxed mb-6">
+                  "Adhel has shown an impressive set of abilities that are expected from an IT professional. 
+                  He is an outstanding scholar and member of our college community."
+                </p>
+                
+                <div className="flex items-center gap-4">
+                  <div className="w-8 h-8 bg-gray-500 rounded-full"></div>
                   <div>
-                    <h4 className="text-[#DAC5A7] text-lg font-bold mb-2">{project.category}</h4>
-                    <h3 className="text-white text-4xl font-bold mb-4">{project.title}</h3>
-                    <p className="text-white text-lg leading-relaxed">{project.description}</p>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <span className="text-[#DAC5A7] text-xl font-bold">See More</span>
-                    <ArrowRight className="w-6 h-6 text-[#DAC5A7]" />
+                    <p className="text-white text-sm font-medium">Martin Žagar</p>
+                    <p className="text-white/60 text-xs">[ HR ] [ PROFESSOR ] / [ FROM RIT ]</p>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              </CardContent>
+            </Card>
 
-          {/* Stats */}
-          <div className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {[
-              { number: "15+", label: "Projects Done" },
-              { number: "98%", label: "Client Satisfaction" },
-              { number: "5", label: "Awards Won" },
-              { number: "2+", label: "Years Experience" }
-            ].map((stat, index) => (
-              <div key={index}>
-                <h3 className="text-2xl font-bold text-black mb-2">{stat.number}</h3>
-                <p className="text-black text-sm font-bold">{stat.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section className="bg-[#0A282E] py-24">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-white text-5xl font-bold">Client Testimonials</h2>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                text: "Working with Adhel transformed our data strategy. His insights drove a 40% increase in operational efficiency.",
-                author: "Sarah Johnson",
-                role: "CEO, TechCorp"
-              },
-              {
-                text: "Adhel's machine learning models helped us predict market trends with 95% accuracy. Outstanding work!",
-                author: "Michael Chen", 
-                role: "CTO, DataFlow"
-              },
-              {
-                text: "The BI dashboard Adhel created became our most valuable business tool. Highly recommended!",
-                author: "Emily Rodriguez",
-                role: "VP Analytics, GrowthLab"
-              }
-            ].map((testimonial, index) => (
-              <Card key={index} className="bg-[#324548] border-[#DAC5A7] p-6">
-                <CardContent className="p-0">
-                  <div className="flex items-center gap-2 mb-4">
-                    <span className="text-[#DAC5A7]">[</span>
-                    <div className="flex">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-3 h-3 fill-yellow-400 text-yellow-400" />
-                      ))}
-                    </div>
-                    <span className="text-[#DAC5A7]">]</span>
+            {/* Testimonial 2 */}
+            <Card className="bg-black border border-orange-500/30 p-8">
+              <CardContent className="p-0">
+                <div className="flex items-center gap-2 mb-6">
+                  <span className="text-white/60">[</span>
+                  <div className="flex">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-3 w-3 fill-yellow-400 text-yellow-400" />
+                    ))}
                   </div>
-                  <p className="text-[#DAC5A7] text-lg leading-relaxed mb-6">"{testimonial.text}"</p>
-                  <div className="flex items-center gap-4">
-                    <div className="w-8 h-8 bg-gray-500 rounded-full"></div>
-                    <div>
-                      <p className="text-white text-sm font-medium">{testimonial.author}</p>
-                      <p className="text-[#DAC5A7] text-xs">{testimonial.role}</p>
-                    </div>
+                  <span className="text-white/60">]</span>
+                </div>
+                
+                <p className="text-white/80 text-lg leading-relaxed mb-6">
+                  "One of the most remarkable projects Adhel undertook was the Yumi project. 
+                  His passion for AI-driven technologies is evident in his approach to problem-solving."
+                </p>
+                
+                <div className="flex items-center gap-4">
+                  <div className="w-8 h-8 bg-gray-500 rounded-full"></div>
+                  <div>
+                    <p className="text-white text-sm font-medium">Abhilasha Singh</p>
+                    <p className="text-white/60 text-xs">[ AE ] [ RESEARCHER ] / [ FROM RIT ]</p>
                   </div>
-                </CardContent>
-              </Card>
-            ))}
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Testimonial 3 */}
+            <Card className="bg-black border border-orange-500/30 p-8">
+              <CardContent className="p-0">
+                <div className="flex items-center gap-2 mb-6">
+                  <span className="text-white/60">[</span>
+                  <div className="flex">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-3 w-3 fill-yellow-400 text-yellow-400" />
+                    ))}
+                  </div>
+                  <span className="text-white/60">]</span>
+                </div>
+                
+                <p className="text-white/80 text-lg leading-relaxed mb-6">
+                  "Mr. Siddique maintained very good grades and pinned himself in the top 10% of the class. 
+                  His endless curiosity combined with his willingness to take risks is remarkable."
+                </p>
+                
+                <div className="flex items-center gap-4">
+                  <div className="w-8 h-8 bg-gray-500 rounded-full"></div>
+                  <div>
+                    <p className="text-white text-sm font-medium">Omar Abdul Latif</p>
+                    <p className="text-white/60 text-xs">[ AE ] [ PROFESSOR ] / [ FROM RIT ]</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center mt-12">
+            <span className="text-white/60 text-sm">[ TESTIMONIALS ]</span>
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="bg-[#0A282E] py-24">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <h3 className="text-[#DAC5A7] text-xl mb-4 uppercase tracking-wide">Contact Info</h3>
-            <h2 className="text-white text-5xl font-bold">Get in Touch</h2>
-            <div className="w-16 h-1 bg-[#DAC5A7] mx-auto mt-8"></div>
+      <section className="py-32 bg-black">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-8xl font-bold text-white mb-16">
+            LET'S BUILD IT
+          </h2>
+          
+          <div className="w-16 h-16 mx-auto mb-32 rounded-full bg-orange-500 flex items-center justify-center">
+            <Plus className="h-8 w-8 text-white" />
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-16">
-            {/* Left - Image */}
-            <div className="relative">
-              <div className="bg-[#0A282E] p-8 border border-[#DAC5A7] rounded-lg shadow-2xl">
-                <img 
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fc08b90088e804256b075841c946b0250%2F750041d28f8643e6b5ac9909841613d3?format=webp&width=800"
-                  alt="Contact Adhel Siddique"
-                  className="w-full h-[500px] object-cover rounded"
-                />
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto text-sm">
+            <div className="text-center">
+              <div className="flex items-center justify-center gap-2 mb-2">
+                <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                <span className="text-white font-bold">AVAILABLE NOW</span>
+                <div className="px-2 py-1 border border-orange-500 text-xs text-white/60">GMT +4</div>
               </div>
             </div>
-
-            {/* Right - Contact Form */}
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-[#DAC5A7] text-xl font-bold mb-4">Message</h3>
-                <h4 className="text-white text-2xl font-bold mb-6">Write Me Something</h4>
-                
-                <div className="space-y-4 mb-6">
-                  <p className="text-[#DAC5A7] flex items-center gap-2">
-                    <span>Call Me:</span>
-                    <span className="text-white font-bold">+971 123 (456) 789</span>
-                  </p>
-                  <p className="text-[#DAC5A7] flex items-center gap-2">
-                    <span>E-mail:</span>
-                    <span className="text-white font-bold">adhel@example.com</span>
-                  </p>
-                </div>
+            <div className="text-center">
+              <span className="text-white font-bold">REMOTE/DXB</span>
+              <div className="px-2 py-1 border border-orange-500 text-xs text-white/60 inline-block ml-2">
+                25°15'N 55°18'E
               </div>
-
-              <div className="space-y-4">
-                <div className="grid grid-cols-2 gap-4">
-                  <input 
-                    type="text" 
-                    placeholder="Name"
-                    className="bg-[#324548] text-white p-4 rounded border-none focus:outline-none focus:ring-2 focus:ring-[#DAC5A7]"
-                  />
-                  <input 
-                    type="email" 
-                    placeholder="Email"
-                    className="bg-[#324548] text-white p-4 rounded border-none focus:outline-none focus:ring-2 focus:ring-[#DAC5A7]"
-                  />
-                </div>
-                <input 
-                  type="text" 
-                  placeholder="Subject"
-                  className="w-full bg-[#324548] text-white p-4 rounded border-none focus:outline-none focus:ring-2 focus:ring-[#DAC5A7]"
-                />
-                <textarea 
-                  placeholder="Your Message"
-                  rows={6}
-                  className="w-full bg-[#324548] text-white p-4 rounded border-none focus:outline-none focus:ring-2 focus:ring-[#DAC5A7] resize-none"
-                />
-              </div>
-
-              <Button className="bg-[#DAC5A7] text-black hover:bg-[#DAC5A7]/90 px-12 py-4 text-xl font-medium rounded-lg">
-                Send Message
-              </Button>
             </div>
+            <div className="text-center">
+              <div className="flex items-center justify-center gap-8">
+                <span className="text-white">Work</span>
+                <span className="text-white">Services</span>
+                <span className="text-white">Contact</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-16 text-white/80 text-sm">
+            Copyright © 2025 Adhel Siddique. All rights reserved.
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-[#DAC5A7] py-12">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex justify-between items-center">
-            <p className="text-black text-xl">Copyright 2024 All Rights Reserved</p>
-            <div className="flex gap-4">
-              {/* Social Icons */}
-              <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center">
-                <div className="w-6 h-6 border-2 border-[#DAC5A7] rounded"></div>
-              </div>
-              <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center">
-                <div className="w-6 h-6 border-2 border-[#DAC5A7] rounded"></div>
-              </div>
-              <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center">
-                <div className="w-6 h-6 border-2 border-[#DAC5A7] rounded"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
