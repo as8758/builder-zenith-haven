@@ -90,28 +90,27 @@ export default function Index() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 pb-12">
           <div className="grid lg:grid-cols-2 gap-12 items-center ml-[199px] pt-[116px] pr-[196px] pl-[195px]">
             {/* Left Content */}
-            <div className="space-y-8">
+            <div className="mr-[1px]">
               <div>
                 <h1 className="text-6xl lg:text-7xl font-bold leading-tight">
                   <span className="text-white">Hello</span>
-                                    <span className="text-orange-500">.</span>
+                  <span className="text-orange-500">.</span>
                 </h1>
-                <div className="mt-4">
-                  <div className="w-12 h-0.5 bg-orange-500 mb-4"></div>
-                  <h2 className="text-2xl lg:text-3xl text-orange-500 font-medium">
-                    I am Adhel Siddique
-                  </h2>
-                  <h3 className="text-xl lg:text-2xl text-white font-medium mt-2">
-                    Professional Data Analyst & AI Developer
-                  </h3>
-                </div>
               </div>
-
-              <Button className="bg-orange-500 text-black hover:bg-orange-500/90 px-8 py-6 text-lg font-medium rounded-lg">
-                <Download className="w-5 h-5 mr-3" />
-                Download CV
-              </Button>
             </div>
+            <h2 className="text-2xl lg:text-3xl text-orange-500 font-medium">
+              &nbsp;My Name is Adhel Siddique
+            </h2>
+            <div className="mt-4">
+              <div className="w-12 h-0.5 bg-orange-500 mb-4"></div>
+              <h3 className="text-xl lg:text-2xl text-white font-medium ml-5">
+                Professional Data Analyst & AI Developer
+              </h3>
+            </div>
+            <Button className="bg-orange-500 text-black hover:bg-orange-500/90 px-8 py-6 text-lg font-medium rounded-lg mt-8">
+              <Download className="w-5 h-5 mr-3" />
+              Download CV
+            </Button>
 
 
           </div>
