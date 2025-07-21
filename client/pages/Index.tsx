@@ -614,19 +614,8 @@ CERTIFICATES
             <div className="w-16 h-1 bg-orange-500 mx-auto mt-8"></div>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-16">
-            {/* Left - Image */}
-            <div className="relative">
-              <div className="bg-[black] p-8 border border-orange-500 rounded-lg shadow-2xl">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fc08b90088e804256b075841c946b0250%2F750041d28f8643e6b5ac9909841613d3?format=webp&width=800"
-                  alt="Contact Adhel Siddique"
-                  className="w-full h-[500px] object-cover rounded"
-                />
-              </div>
-            </div>
-
-            {/* Right - Contact Form */}
+          <div className="grid lg:grid-cols-1 gap-16 ml-[200px]">
+            {/* Contact Form */}
             <div className="space-y-8">
               <div>
                 <h3 className="text-orange-500 text-xl font-bold mb-4">
