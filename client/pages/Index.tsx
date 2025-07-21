@@ -418,11 +418,11 @@ INTERESTS
       <section className="bg-black py-24">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h3 className="text-orange-500 text-xl mb-4 uppercase tracking-wide">
+            <h3 className="text-orange-500 text-xl mb-4 uppercase tracking-wide animate-fade-in transform hover:tracking-widest transition-all duration-500">
               My Journey
             </h3>
-            <h2 className="text-white text-5xl font-bold mb-8">Experience & Achievements</h2>
-            <div className="w-16 h-1 bg-orange-500 mx-auto"></div>
+            <h2 className="text-white text-5xl font-bold mb-8 animate-fade-in-up transform hover:text-orange-500 hover:scale-105 transition-all duration-500">Experience & Achievements</h2>
+            <div className="w-16 h-1 bg-orange-500 mx-auto animate-expand-delayed transition-all duration-700 hover:w-32"></div>
           </div>
 
           {/* Work Experience Timeline */}
