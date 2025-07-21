@@ -316,29 +316,29 @@ INTERESTS
               </p>
 
               <div className="grid grid-cols-2 gap-6 mb-8">
-                <div className="bg-gray-800 rounded-lg p-4 border-l-4 border-orange-500">
-                  <h5 className="text-orange-500 text-sm font-bold mb-1">
+                <div className="bg-gray-800 rounded-lg p-4 border-l-4 border-orange-500 transition-all duration-300 hover:border-orange-400 hover:shadow-lg hover:shadow-orange-500/20 hover:scale-105 group">
+                  <h5 className="text-orange-500 text-sm font-bold mb-1 group-hover:text-orange-400 transition-colors">
                     Name
                   </h5>
-                  <p className="text-white">Adhel Siddique</p>
+                  <p className="text-white group-hover:text-orange-100 transition-colors">Adhel Siddique</p>
                 </div>
-                <div className="bg-gray-800 rounded-lg p-4 border-l-4 border-orange-500">
-                  <h5 className="text-orange-500 text-sm font-bold mb-1">
+                <div className="bg-gray-800 rounded-lg p-4 border-l-4 border-orange-500 transition-all duration-300 hover:border-orange-400 hover:shadow-lg hover:shadow-orange-500/20 hover:scale-105 group">
+                  <h5 className="text-orange-500 text-sm font-bold mb-1 group-hover:text-orange-400 transition-colors">
                     Email
                   </h5>
-                  <p className="text-white">Adhelsiddique@gmail.com</p>
+                  <p className="text-white group-hover:text-orange-100 transition-colors">Adhelsiddique@gmail.com</p>
                 </div>
-                <div className="bg-gray-800 rounded-lg p-4 border-l-4 border-orange-500">
-                  <h5 className="text-orange-500 text-sm font-bold mb-1">
+                <div className="bg-gray-800 rounded-lg p-4 border-l-4 border-orange-500 transition-all duration-300 hover:border-orange-400 hover:shadow-lg hover:shadow-orange-500/20 hover:scale-105 group">
+                  <h5 className="text-orange-500 text-sm font-bold mb-1 group-hover:text-orange-400 transition-colors">
                     Location
                   </h5>
-                  <p className="text-white">NY , USA</p>
+                  <p className="text-white group-hover:text-orange-100 transition-colors">NY , USA</p>
                 </div>
-                <div className="bg-gray-800 rounded-lg p-4 border-l-4 border-orange-500">
-                  <h5 className="text-orange-500 text-sm font-bold mb-1">
+                <div className="bg-gray-800 rounded-lg p-4 border-l-4 border-orange-500 transition-all duration-300 hover:border-orange-400 hover:shadow-lg hover:shadow-orange-500/20 hover:scale-105 group">
+                  <h5 className="text-orange-500 text-sm font-bold mb-1 group-hover:text-orange-400 transition-colors">
                     Phone
                   </h5>
-                  <p className="text-white">+1(585)2303740</p>
+                  <p className="text-white group-hover:text-orange-100 transition-colors">+1(585)2303740</p>
                 </div>
               </div>
 
