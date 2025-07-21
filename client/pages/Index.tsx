@@ -538,67 +538,85 @@ CERTIFICATES
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="bg-[black] py-24">
+      {/* Recommendations Section */}
+      <section className="bg-black py-24">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-white text-5xl font-bold">
-              Client Testimonials
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-white text-6xl font-bold mb-4 transition-all duration-500 hover:text-orange-500">
+              Academic Recommendations
             </h2>
+            <h3 className="text-4xl text-white/60 italic">
+              Hear it directly from my professors.
+            </h3>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
               {
-                text: "Working with Adhel transformed our data strategy. His insights drove a 40% increase in operational efficiency.",
-                author: "Sarah Johnson",
-                role: "CEO, TechCorp",
+                text: "Adhel has shown an impressive set of abilities that are expected from an IT professional. He is an outstanding scholar and member of our college community with advanced computational problem-solving skills.",
+                author: "Prof. Martin Žagar, PhD, EMBA",
+                role: "Scientific Advisor in Computer Science",
+                institution: "RIT Croatia"
               },
               {
-                text: "Adhel's machine learning models helped us predict market trends with 95% accuracy. Outstanding work!",
-                author: "Michael Chen",
-                role: "CTO, DataFlow",
+                text: "One of the most remarkable projects Adhel undertook was the Yumi project. His passion for AI-driven technologies is evident in his approach to problem-solving and technical knowledge.",
+                author: "Dr. Abhilasha Singh",
+                role: "AIRC Coordinator & Postdoctoral Researcher",
+                institution: "RIT Dubai"
               },
               {
-                text: "The BI dashboard Adhel created became our most valuable business tool. Highly recommended!",
-                author: "Emily Rodriguez",
-                role: "VP Analytics, GrowthLab",
+                text: "Mr. Siddique maintained very good grades and pinned himself in the top 10% of the class. His endless curiosity combined with his willingness to take risks is remarkable.",
+                author: "Dr. Omar Abdul Latif",
+                role: "Assistant Professor & Director of Coding Center",
+                institution: "RIT Dubai"
               },
-            ].map((testimonial, index) => (
+            ].map((recommendation, index) => (
               <Card
                 key={index}
-                className="bg-gray-900 border-orange-500 p-6"
+                className="bg-black border border-orange-500/30 p-8 transition-all duration-500 hover:border-orange-500 hover:shadow-2xl hover:shadow-orange-500/20 hover:scale-105 group"
               >
                 <CardContent className="p-0">
-                  <div className="flex items-center gap-2 mb-4">
-                    <span className="text-orange-500">[</span>
+                  <div className="flex items-center gap-2 mb-6">
+                    <span className="text-white/60">[</span>
                     <div className="flex">
                       {[...Array(5)].map((_, i) => (
                         <Star
                           key={i}
-                          className="w-3 h-3 fill-yellow-400 text-yellow-400"
+                          className="h-3 w-3 fill-yellow-400 text-yellow-400 transition-transform group-hover:scale-110"
+                          style={{ animationDelay: `${i * 0.1}s` }}
                         />
                       ))}
                     </div>
-                    <span className="text-orange-500">]</span>
+                    <span className="text-white/60">]</span>
                   </div>
-                  <p className="text-orange-500 text-lg leading-relaxed mb-6">
-                    "{testimonial.text}"
+
+                  <p className="text-white/80 text-lg leading-relaxed mb-6 transition-colors group-hover:text-white">
+                    "{recommendation.text}"
                   </p>
+
                   <div className="flex items-center gap-4">
-                    <div className="w-8 h-8 bg-gray-500 rounded-full"></div>
+                    <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center text-white font-bold text-lg transition-transform group-hover:rotate-12">
+                      {recommendation.author.split(' ').map(name => name[0]).join('').slice(0,2)}
+                    </div>
                     <div>
-                      <p className="text-white text-sm font-medium">
-                        {testimonial.author}
+                      <p className="text-white text-sm font-medium group-hover:text-orange-500 transition-colors">
+                        {recommendation.author}
                       </p>
-                      <p className="text-orange-500 text-xs">
-                        {testimonial.role}
+                      <p className="text-white/60 text-xs leading-tight">
+                        {recommendation.role}
+                      </p>
+                      <p className="text-orange-500 text-xs font-medium">
+                        {recommendation.institution}
                       </p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
             ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <span className="text-white/60 text-sm animate-pulse">[ RECOMMENDATIONS ]</span>
           </div>
         </div>
       </section>
