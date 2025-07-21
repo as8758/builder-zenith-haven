@@ -269,14 +269,14 @@ INTERESTS
       <div className="h-20 bg-orange-500"></div>
 
       {/* About Section */}
-      <section id="about" className="bg-black py-24 overflow-hidden">
+      <section id="about" className="bg-black py-24">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16 animate-fade-in">
-            <h3 className="text-orange-500 text-xl mb-4 uppercase tracking-wide transition-all duration-500 hover:tracking-widest">
+          <div className="text-center mb-16">
+            <h3 className="text-orange-500 text-xl mb-4 uppercase tracking-wide">
               Biography
             </h3>
-            <h2 className="text-white text-5xl font-bold mb-8 transition-all duration-500 hover:text-orange-500 hover:scale-105">Who am I?</h2>
-            <div className="w-16 h-1 bg-orange-500 mx-auto transition-all duration-500 hover:w-32"></div>
+            <h2 className="text-white text-5xl font-bold mb-8">Who am I?</h2>
+            <div className="w-16 h-1 bg-orange-500 mx-auto"></div>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-16 items-center">
