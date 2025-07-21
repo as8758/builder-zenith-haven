@@ -506,8 +506,8 @@ INTERESTS
               ].map((job, index) => (
                 <div key={index} className={`relative flex items-center mb-16 ${job.side === 'left' ? 'justify-start' : 'justify-end'}`}>
                   {/* Timeline Dot */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-orange-500 rounded-full border-4 border-black z-10 flex items-center justify-center">
-                    <div className="w-2 h-2 bg-white rounded-full"></div>
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-orange-500 rounded-full border-4 border-black z-10 flex items-center justify-center transition-all duration-300 hover:scale-125 animate-pulse-slow">
+                    <div className="w-2 h-2 bg-white rounded-full animate-ping"></div>
                   </div>
 
                   {/* Content Card */}
