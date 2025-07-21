@@ -618,8 +618,8 @@ INTERESTS
                       <p className="text-gray-400 text-sm">Expected Dec 2025</p>
                     </div>
                     <div className="flex items-center gap-4 text-sm">
-                      <span className="text-white">GPA: <strong className="text-orange-500">3.49</strong></span>
-                      <span className="text-white">Dean's List: <strong className="text-orange-500">3 times</strong></span>
+                      <span className="text-white">GPA: <strong className="text-orange-500">3.54</strong></span>
+                      <span className="text-white">Dean's List: <strong className="text-orange-500">4 times</strong></span>
                     </div>
                   </div>
                 </div>
