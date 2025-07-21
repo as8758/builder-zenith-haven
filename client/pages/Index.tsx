@@ -153,7 +153,7 @@ Brand Promoter | Dubai, UAE
 GMG, Sports Market                                                                    Jan 2022 - Apr 2022
 Inventory & Stock Assistant | Dubai, UAE
 • Efficiently managed and organized stock inventory for smooth operational flow
-• Accurately entered stock reports into database systems, maintaining 99.5% data accuracy
+��� Accurately entered stock reports into database systems, maintaining 99.5% data accuracy
 • Streamlined inventory processes that reduced stock discrepancies by 15%
 • Collaborated with team members to ensure timely stock replenishment and organization
 
@@ -248,23 +248,7 @@ INTERESTS
             </div>
           </div>
 
-          {/* Bottom Hero Description */}
-          <div className="absolute bottom-8 left-8 max-w-xl animate-fade-in-delay-long">
-            <div className="bg-black/70 backdrop-blur-sm border border-orange-500/30 rounded-xl p-8 hover:border-orange-500 transition-all duration-500 hover:bg-black/80 group">
-              <p className="text-white text-xl leading-relaxed mb-6 font-light">
-                I am a <span className="text-orange-500 font-semibold">Data Analyst & AI Developer</span>.
-                My specialty lies in transforming complex data into
-                <span className="text-orange-400 font-medium"> actionable insights</span>.
-                That's creativity in determining solutions that fit business goals.
-              </p>
-              <div className="flex items-center gap-4 cursor-pointer group-hover:scale-105 transition-transform duration-300">
-                <span className="text-orange-500 text-2xl font-medium hover:text-orange-400 transition-colors">
-                  Let's Talk
-                </span>
-                <ArrowRight className="w-8 h-8 text-orange-500 group-hover:translate-x-2 transition-transform duration-300" />
-              </div>
-            </div>
-          </div>
+
         </div>
       </section>
 
