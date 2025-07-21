@@ -241,9 +241,9 @@ INTERESTS
             </div>
 
             {/* Scroll Indicator */}
-            <div className="mt-16">
-              <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center cursor-pointer">
-                <div className="w-1 h-3 bg-orange-500 rounded-full mt-2"></div>
+            <div className="mt-16 animate-fade-in-up-delayed">
+              <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center cursor-pointer hover:border-orange-500 transition-all duration-300 animate-bounce-slow">
+                <div className="w-1 h-3 bg-orange-500 rounded-full mt-2 animate-pulse"></div>
               </div>
             </div>
           </div>
