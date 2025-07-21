@@ -629,7 +629,7 @@ INTERESTS
             ].map((recommendation, index) => (
               <Card
                 key={index}
-                className="bg-black border border-orange-500/30 p-8 transition-all duration-500 hover:border-orange-500 hover:shadow-2xl hover:shadow-orange-500/20 hover:scale-105 group"
+                className="bg-black border border-orange-500/30 p-8 hover:border-orange-500 transition-colors duration-300"
               >
                 <CardContent className="p-0">
                   <div className="flex items-center gap-2 mb-6">
@@ -638,24 +638,23 @@ INTERESTS
                       {[...Array(5)].map((_, i) => (
                         <Star
                           key={i}
-                          className="h-3 w-3 fill-yellow-400 text-yellow-400 transition-transform group-hover:scale-110"
-                          style={{ animationDelay: `${i * 0.1}s` }}
+                          className="h-3 w-3 fill-yellow-400 text-yellow-400"
                         />
                       ))}
                     </div>
                     <span className="text-white/60">]</span>
                   </div>
 
-                  <p className="text-white/80 text-lg leading-relaxed mb-6 transition-colors group-hover:text-white">
+                  <p className="text-white/80 text-lg leading-relaxed mb-6">
                     "{recommendation.text}"
                   </p>
 
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center text-white font-bold text-lg transition-transform group-hover:rotate-12">
+                    <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
                       {recommendation.author.split(' ').map(name => name[0]).join('').slice(0,2)}
                     </div>
                     <div>
-                      <p className="text-white text-sm font-medium group-hover:text-orange-500 transition-colors">
+                      <p className="text-white text-sm font-medium">
                         {recommendation.author}
                       </p>
                       <p className="text-white/60 text-xs leading-tight">
