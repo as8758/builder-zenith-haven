@@ -88,31 +88,92 @@ export default function Index() {
 
         {/* Hero Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 pb-12">
-          <div className="grid lg:grid-cols-2 gap-12 items-center ml-[199px] pt-[116px] pr-[196px] pl-[195px]">
-            {/* Left Content */}
-            <div className="mr-[1px]">
-              <div>
-                <h1 className="text-6xl lg:text-7xl font-bold leading-tight">
-                  <span className="text-white">Hello</span>
-                  <span className="text-orange-500">.</span>
-                </h1>
+          <div className="flex flex-col items-center justify-center min-h-[80vh] text-center space-y-8 animate-fade-in">
+            {/* Main Content */}
+            <div className="space-y-6">
+              <h1 className="text-6xl lg:text-8xl xl:text-9xl font-bold leading-tight animate-slide-up">
+                <span className="text-white">Hello</span>
+                <span className="text-orange-500 animate-pulse">.</span>
+              </h1>
+
+              <div className="space-y-4 animate-slide-up-delay">
+                <div className="w-16 h-1 bg-orange-500 mx-auto animate-expand"></div>
+                <h2 className="text-2xl lg:text-4xl text-orange-500 font-medium animate-fade-in-delay">
+                  My Name is Adhel Siddique
+                </h2>
+                <h3 className="text-lg lg:text-2xl text-white/90 font-light animate-fade-in-delay-2">
+                  Professional Data Analyst & AI Developer
+                </h3>
               </div>
             </div>
-            <h2 className="text-2xl lg:text-3xl text-orange-500 font-medium">
-              &nbsp;My Name is Adhel Siddique
-            </h2>
-            <div className="mt-4">
-              <div className="w-12 h-0.5 bg-orange-500 mb-4"></div>
-              <h3 className="text-xl lg:text-2xl text-white font-medium ml-5">
-                Professional Data Analyst & AI Developer
-              </h3>
+
+            {/* CV Download Button */}
+            <div className="animate-bounce-in">
+              <button
+                onClick={() => {
+                  // Create and download CV
+                  const cvContent = `ADHEL SIDDIQUE
+Rochester, NY | +1 (585) 2303740 | adhelsiddique@gmail.com
+
+Summary
+Data-focused Business Analyst with proven expertise in Power BI, SQL, Python, and MS Office tools, including Excel and Access.
+Experienced in extracting and analyzing data to identify trends and opportunities that enhance operational processes and profitability.
+Adept at designing reports and recommending actionable improvements to support business initiatives in dynamic environments.
+
+Education
+Rochester Institute of Technology, Dubai Dec 2025
+BSc, Computing and Information Technologies
+• GPA: 3.49 (Cumulative)
+• Achievements: Dean's List – Recognized for academic excellence three times, Scholarships: Awarded a 40% scholarship towards
+tuition, Global Scholarship Program: Secured an extra 12,000 AED (~$3,270 USD) scholarship, granted to only one student per
+semester for studying abroad at any RIT global campus
+
+Experience
+SIROCO LLC Oct 2024 - Jan 2025
+Business Analyst Remote, United States
+• Analyzed business data to identify trends and insights, supporting decision-making processes.
+• Developed detailed reports and dashboards using Power BI, PostgreSQL, and Excel, incorporating query design techniques.
+• Recommended process improvements to enhance overall profitability and operational efficiency.
+
+Skills
+• Data Analysis: Data Analysis (Power BI, SQL, DAX), Statistical Analysis, Report Crafting
+• Technical Tools: Excel, Microsoft Azure
+• Programming: Python, Java
+• Soft Skills: Problem-Solving, Communication, Team Collaboration
+
+Certificates
+• Microsoft Certified: Azure Fundamentals
+• PL-300 Certified: Microsoft Power BI Data Analyst
+• CS50P – Harvard's Introduction to Programming with Python
+• DEWA Robotics Championship Winner (2017)
+• First Place – Wollongong Annual Robotics Competition (2017)
+• Transforming Tasks with AI – TDRA`;
+
+                  const blob = new Blob([cvContent], { type: 'text/plain' });
+                  const url = window.URL.createObjectURL(blob);
+                  const a = document.createElement('a');
+                  a.href = url;
+                  a.download = 'Adhel_Siddique_CV.txt';
+                  document.body.appendChild(a);
+                  a.click();
+                  document.body.removeChild(a);
+                  window.URL.revokeObjectURL(url);
+                }}
+                className="group bg-orange-500 text-black hover:bg-orange-600 px-8 py-4 text-lg font-bold rounded-xl
+                         transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/25
+                         flex items-center gap-3 animate-glow"
+              >
+                <Download className="w-5 h-5 group-hover:animate-bounce" />
+                Download CV
+              </button>
             </div>
-            <Button className="bg-orange-500 text-black hover:bg-orange-500/90 px-8 py-6 text-lg font-medium rounded-lg mt-8">
-              <Download className="w-5 h-5 mr-3" />
-              Download CV
-            </Button>
 
-
+            {/* Scroll Indicator */}
+            <div className="animate-bounce mt-16">
+              <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
+                <div className="w-1 h-3 bg-orange-500 rounded-full mt-2 animate-pulse"></div>
+              </div>
+            </div>
           </div>
 
           {/* Bottom Hero Description */}
