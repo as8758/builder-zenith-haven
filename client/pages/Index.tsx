@@ -113,16 +113,7 @@ export default function Index() {
               </Button>
             </div>
 
-            {/* Right Content - Image */}
-            <div className="relative">
-              <div className="w-full bg-orange-500 rounded-lg overflow-hidden">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fc08b90088e804256b075841c946b0250%2F750041d28f8643e6b5ac9909841613d3?format=webp&width=800"
-                  alt="Adhel Siddique"
-                  className="w-full h-[600px] object-cover"
-                />
-              </div>
-            </div>
+
           </div>
 
           {/* Bottom Hero Description */}
