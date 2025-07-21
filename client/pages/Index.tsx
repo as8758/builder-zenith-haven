@@ -512,7 +512,7 @@ INTERESTS
 
                   {/* Content Card */}
                   <div className={`w-5/12 ${job.side === 'left' ? 'mr-auto pr-8' : 'ml-auto pl-8'}`}>
-                    <Card className="bg-gray-900 border border-orange-500/30 p-6 hover:border-orange-500 transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/20">
+                    <Card className="bg-gray-900 border border-orange-500/30 p-6 hover:border-orange-500 transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/20 transform hover:scale-105 hover:-translate-y-2 animate-slide-in-stagger group">
                       <CardContent className="p-0">
                         <div className="mb-4">
                           <div className="flex items-center gap-2 mb-2">
