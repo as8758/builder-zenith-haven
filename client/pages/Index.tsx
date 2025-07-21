@@ -182,7 +182,7 @@ CERTIFICATIONS & ACHIEVEMENTS
 
 ACADEMIC PROJECTS
 Yumi Robotics Project                                                                          2024
-• Developed sophisticated resistor sorting system using dual-arm robot technology
+�� Developed sophisticated resistor sorting system using dual-arm robot technology
 • Implemented AI algorithms for object identification and classification
 • Collaborated with robotics team to achieve 98% sorting accuracy
 
@@ -678,71 +678,131 @@ INTERESTS
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="bg-[black] py-24">
+      <section id="contact" className="bg-black py-32">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
             <h3 className="text-orange-500 text-xl mb-4 uppercase tracking-wide">
               Contact Info
             </h3>
-            <h2 className="text-white text-5xl font-bold">Get in Touch</h2>
-            <div className="w-16 h-1 bg-orange-500 mx-auto mt-8"></div>
+            <h2 className="text-white text-6xl font-bold mb-8">Get in Touch</h2>
+            <div className="w-16 h-1 bg-orange-500 mx-auto"></div>
           </div>
 
-          <div className="grid lg:grid-cols-1 gap-16 ml-[200px]">
-            {/* Contact Form */}
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-orange-500 text-xl font-bold mb-4">
-                  Message
-                </h3>
-                <h4 className="text-white text-2xl font-bold mb-6">
-                  Write Me Something
-                </h4>
+          <div className="max-w-4xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-16">
+              {/* Contact Info */}
+              <div className="space-y-8">
+                <div>
+                  <h3 className="text-orange-500 text-2xl font-bold mb-6">
+                    Let's Connect
+                  </h3>
+                  <p className="text-white/80 text-lg leading-relaxed mb-8">
+                    Ready to transform your data into actionable insights?
+                    Let's discuss how I can help your business grow through
+                    data-driven solutions.
+                  </p>
+                </div>
 
-                <div className="space-y-4 mb-6">
-                  <p className="text-orange-500 flex items-center gap-2">
-                    <span>Call Me:</span>
-                    <span className="text-white font-bold">
-                      +1(585)2303740
-                    </span>
-                  </p>
-                  <p className="text-orange-500 flex items-center gap-2">
-                    <span>E-mail:</span>
-                    <span className="text-white font-bold">
-                      Adhelsiddique@gmail.com
-                    </span>
-                  </p>
+                <div className="space-y-6">
+                  <div className="flex items-center gap-4 p-4 bg-gray-900 rounded-lg border-l-4 border-orange-500">
+                    <Phone className="w-6 h-6 text-orange-500" />
+                    <div>
+                      <p className="text-orange-500 text-sm font-medium">Phone</p>
+                      <p className="text-white font-bold">+1 (585) 230-3740</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-4 p-4 bg-gray-900 rounded-lg border-l-4 border-orange-500">
+                    <Mail className="w-6 h-6 text-orange-500" />
+                    <div>
+                      <p className="text-orange-500 text-sm font-medium">Email</p>
+                      <p className="text-white font-bold">adhelsiddique@gmail.com</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-4 p-4 bg-gray-900 rounded-lg border-l-4 border-orange-500">
+                    <MapPin className="w-6 h-6 text-orange-500" />
+                    <div>
+                      <p className="text-orange-500 text-sm font-medium">Location</p>
+                      <p className="text-white font-bold">Rochester, NY, USA</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="pt-6">
+                  <h4 className="text-white text-xl font-bold mb-4">Available For</h4>
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
+                      <span className="text-white/80">Data Analysis Projects</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
+                      <span className="text-white/80">Business Intelligence Consulting</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
+                      <span className="text-white/80">AI & Automation Solutions</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
+                      <span className="text-white/80">Full-time Opportunities</span>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <div className="space-y-4">
-                <div className="grid grid-cols-2 gap-4">
+              {/* Contact Form */}
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-orange-500 text-2xl font-bold mb-6">
+                    Send a Message
+                  </h3>
+                </div>
+
+                <form className="space-y-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <input
+                      type="text"
+                      placeholder="Your Name"
+                      className="bg-gray-900 text-white p-4 rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all"
+                    />
+                    <input
+                      type="email"
+                      placeholder="Your Email"
+                      className="bg-gray-900 text-white p-4 rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all"
+                    />
+                  </div>
+
                   <input
                     type="text"
-                    placeholder="Name"
-                    className="bg-gray-900 text-white p-4 rounded border-none focus:outline-none focus:ring-2 focus:ring-[orange-500]"
+                    placeholder="Subject"
+                    className="w-full bg-gray-900 text-white p-4 rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all"
                   />
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    className="bg-gray-900 text-white p-4 rounded border-none focus:outline-none focus:ring-2 focus:ring-[orange-500]"
-                  />
-                </div>
-                <input
-                  type="text"
-                  placeholder="Subject"
-                  className="w-full bg-gray-900 text-white p-4 rounded border-none focus:outline-none focus:ring-2 focus:ring-[orange-500]"
-                />
-                <textarea
-                  placeholder="Your Message"
-                  rows={6}
-                  className="w-full bg-gray-900 text-white p-4 rounded border-none focus:outline-none focus:ring-2 focus:ring-[orange-500] resize-none"
-                />
-              </div>
 
-              <Button className="bg-orange-500 text-black hover:bg-orange-500/90 px-12 py-4 text-xl font-medium rounded-lg">
-                Send Message
-              </Button>
+                  <textarea
+                    placeholder="Your Message"
+                    rows={6}
+                    className="w-full bg-gray-900 text-white p-4 rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent resize-none transition-all"
+                  />
+
+                  <button
+                    type="submit"
+                    className="w-full bg-orange-500 text-black font-bold py-4 px-8 rounded-lg hover:bg-orange-600 transition-colors duration-300 flex items-center justify-center gap-3"
+                  >
+                    <span>Send Message</span>
+                    <ArrowRight className="w-5 h-5" />
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            {/* Status Indicator */}
+            <div className="text-center mt-16">
+              <div className="inline-flex items-center gap-3 px-6 py-3 bg-gray-900 rounded-full border border-orange-500/30">
+                <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                <span className="text-white font-medium">Available for new projects</span>
+              </div>
             </div>
           </div>
         </div>
