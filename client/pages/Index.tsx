@@ -90,25 +90,25 @@ export default function Index() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 pb-12">
           <div className="flex flex-col items-center justify-center min-h-[80vh] text-center space-y-8">
             {/* Main Content */}
-            <div className="space-y-6 animate-fade-in">
-              <h1 className="text-6xl lg:text-8xl xl:text-9xl font-bold leading-tight transform transition-all duration-1000 hover:scale-105">
+            <div className="space-y-6">
+              <h1 className="text-6xl lg:text-8xl xl:text-9xl font-bold leading-tight">
                 <span className="text-white">Hello</span>
-                <span className="text-orange-500 animate-pulse">.</span>
+                <span className="text-orange-500">.</span>
               </h1>
 
               <div className="space-y-4">
-                <div className="w-16 h-1 bg-orange-500 mx-auto transition-all duration-1000 hover:w-24"></div>
-                <h2 className="text-2xl lg:text-4xl text-orange-500 font-medium opacity-0 animate-fade-in animation-delay-500">
+                <div className="w-16 h-1 bg-orange-500 mx-auto"></div>
+                <h2 className="text-2xl lg:text-4xl text-orange-500 font-medium">
                   My Name is Adhel Siddique
                 </h2>
-                <h3 className="text-lg lg:text-2xl text-white/90 font-light opacity-0 animate-fade-in animation-delay-700">
+                <h3 className="text-lg lg:text-2xl text-white/90 font-light">
                   Professional Data Analyst & AI Developer
                 </h3>
               </div>
             </div>
 
             {/* CV Download Button */}
-            <div className="opacity-0 animate-fade-in animation-delay-1000">
+            <div>
               <button
                 onClick={() => {
                   // Create comprehensive CV content
@@ -232,8 +232,8 @@ INTERESTS
                   window.URL.revokeObjectURL(url);
                 }}
                 className="group bg-orange-500 text-black hover:bg-orange-600 px-8 py-4 text-lg font-bold rounded-xl
-                         transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/25
-                         flex items-center gap-3 active:scale-95 animate-pulse hover:animate-none"
+                         transition-all duration-300 hover:shadow-lg
+                         flex items-center gap-3"
               >
                 <Download className="w-5 h-5 transition-transform group-hover:animate-bounce" />
                 Download Complete CV
@@ -241,9 +241,9 @@ INTERESTS
             </div>
 
             {/* Scroll Indicator */}
-            <div className="animate-bounce mt-16 opacity-70 hover:opacity-100 transition-opacity">
+            <div className="mt-16">
               <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center cursor-pointer">
-                <div className="w-1 h-3 bg-orange-500 rounded-full mt-2 animate-pulse"></div>
+                <div className="w-1 h-3 bg-orange-500 rounded-full mt-2"></div>
               </div>
             </div>
           </div>
