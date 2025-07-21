@@ -108,7 +108,7 @@ export default function Index() {
             </div>
 
             {/* CV Download Button */}
-            <div>
+            <div className="animate-bounce-in-delayed">
               <button
                 onClick={() => {
                   // Create comprehensive CV content
