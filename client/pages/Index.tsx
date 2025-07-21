@@ -182,7 +182,7 @@ CERTIFICATIONS & ACHIEVEMENTS
 
 ACADEMIC PROJECTS
 Yumi Robotics Project                                                                          2024
-�� Developed sophisticated resistor sorting system using dual-arm robot technology
+• Developed sophisticated resistor sorting system using dual-arm robot technology
 • Implemented AI algorithms for object identification and classification
 • Collaborated with robotics team to achieve 98% sorting accuracy
 
@@ -597,8 +597,8 @@ INTERESTS
       {/* Recommendations Section */}
       <section className="bg-black py-24">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-white text-6xl font-bold mb-4 transition-all duration-500 hover:text-orange-500">
+          <div className="text-center mb-16">
+            <h2 className="text-white text-6xl font-bold mb-4">
               Academic Recommendations
             </h2>
             <h3 className="text-4xl text-white/60 italic">
