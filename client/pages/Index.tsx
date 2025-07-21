@@ -414,6 +414,238 @@ INTERESTS
         </div>
       </section>
 
+      {/* Timeline Section */}
+      <section className="bg-black py-24">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h3 className="text-orange-500 text-xl mb-4 uppercase tracking-wide">
+              My Journey
+            </h3>
+            <h2 className="text-white text-5xl font-bold mb-8">Experience & Achievements</h2>
+            <div className="w-16 h-1 bg-orange-500 mx-auto"></div>
+          </div>
+
+          {/* Work Experience Timeline */}
+          <div className="mb-20">
+            <h3 className="text-white text-3xl font-bold text-center mb-12">Work Experience</h3>
+            <div className="relative">
+              {/* Timeline Line */}
+              <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-orange-500 h-full"></div>
+
+              {[
+                {
+                  period: "Aug 2025 – Present",
+                  position: "SI Leader",
+                  company: "Rochester Institute of Technology (RIT), US",
+                  location: "Rochester, NY",
+                  type: "Academic Success Center",
+                  highlights: [
+                    "Facilitate two weekly peer-led Supplemental Instruction (SI) study sessions for students",
+                    "Support students in historically challenging courses (Software Development, Computer Science)",
+                    "Plan and organize study session content; maintain accurate attendance records",
+                    "Communicate regularly with SI Supervisor and course faculty regarding student progress"
+                  ],
+                  side: "left"
+                },
+                {
+                  period: "Oct 2024 – Jan 2025",
+                  position: "Business Analyst",
+                  company: "SIROCO LLC",
+                  location: "Remote, US",
+                  type: "Data Analytics",
+                  highlights: [
+                    "Analyzed business data to identify trends and actionable insights",
+                    "Developed comprehensive reports and dashboards using Power BI and PostgreSQL",
+                    "Worked cross-functionally to improve processes and data quality",
+                    "Implemented data-driven solutions that enhanced operational efficiency"
+                  ],
+                  side: "right"
+                },
+                {
+                  period: "May 2023 – Jul 2023",
+                  position: "Brand Promoter",
+                  company: "Sketches",
+                  location: "Dubai, UAE",
+                  type: "Marketing & Promotion",
+                  highlights: [
+                    "Engaged customers through product demos and promotional events",
+                    "Collected customer feedback and performed competitive analysis",
+                    "Exceeded engagement targets through strategic customer interaction",
+                    "Utilized online research for market analysis and trend identification"
+                  ],
+                  side: "left"
+                },
+                {
+                  period: "Jan 2022 – Apr 2022",
+                  position: "Inventory & Stock Assistant",
+                  company: "GMG, Sports Market",
+                  location: "Dubai, UAE",
+                  type: "Operations",
+                  highlights: [
+                    "Managed stock organization and tracked inventory with 99.5% accuracy",
+                    "Entered stock reports into databases, maintaining up-to-date records",
+                    "Streamlined inventory processes reducing discrepancies by 15%",
+                    "Collaborated with team to ensure efficient stock management"
+                  ],
+                  side: "right"
+                },
+                {
+                  period: "Apr 2021 – Dec 2021",
+                  position: "Sales Associate",
+                  company: "Threads, Time",
+                  location: "Dubai, UAE",
+                  type: "Retail Sales",
+                  highlights: [
+                    "Assisted over 80 customers daily with sales and product information",
+                    "Handled cash registers and maintained store presentation",
+                    "Organized inventory and ensured optimal product display",
+                    "Achieved 95% customer satisfaction rate through excellent service"
+                  ],
+                  side: "left"
+                }
+              ].map((job, index) => (
+                <div key={index} className={`relative flex items-center mb-16 ${job.side === 'left' ? 'justify-start' : 'justify-end'}`}>
+                  {/* Timeline Dot */}
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-orange-500 rounded-full border-4 border-black z-10 flex items-center justify-center">
+                    <div className="w-2 h-2 bg-white rounded-full"></div>
+                  </div>
+
+                  {/* Content Card */}
+                  <div className={`w-5/12 ${job.side === 'left' ? 'mr-auto pr-8' : 'ml-auto pl-8'}`}>
+                    <Card className="bg-gray-900 border border-orange-500/30 p-6 hover:border-orange-500 transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/20">
+                      <CardContent className="p-0">
+                        <div className="mb-4">
+                          <div className="flex items-center gap-2 mb-2">
+                            <span className="text-orange-500 text-sm font-bold px-2 py-1 bg-orange-500/10 rounded">{job.period}</span>
+                            <span className="text-gray-400 text-sm">{job.type}</span>
+                          </div>
+                          <h4 className="text-white text-xl font-bold mb-1">{job.position}</h4>
+                          <h5 className="text-orange-500 text-lg font-semibold mb-1">{job.company}</h5>
+                          <p className="text-gray-400 text-sm mb-4">{job.location}</p>
+                        </div>
+                        <ul className="space-y-2">
+                          {job.highlights.map((highlight, i) => (
+                            <li key={i} className="flex items-start gap-2 text-white/80 text-sm">
+                              <div className="w-1.5 h-1.5 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
+                              <span>{highlight}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Certifications Timeline */}
+          <div>
+            <h3 className="text-white text-3xl font-bold text-center mb-12">Certifications & Achievements</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                {
+                  title: "Microsoft Certified: Azure Fundamentals",
+                  year: "2024",
+                  icon: "☁️",
+                  category: "Cloud Computing",
+                  description: "Fundamental understanding of Azure services and cloud concepts"
+                },
+                {
+                  title: "Microsoft PL-300: Power BI Data Analyst Associate",
+                  year: "2024",
+                  icon: "📊",
+                  category: "Data Analytics",
+                  description: "Advanced Power BI skills for data modeling and visualization"
+                },
+                {
+                  title: "CS50P: Harvard's Introduction to Programming with Python",
+                  year: "2024",
+                  icon: "🐍",
+                  category: "Programming",
+                  description: "Computer science fundamentals and Python programming"
+                },
+                {
+                  title: "DEWA Robotics Championship Winner",
+                  year: "2017",
+                  icon: "🏆",
+                  category: "Robotics",
+                  description: "First place in Dubai Electricity and Water Authority robotics competition"
+                },
+                {
+                  title: "First Place – Wollongong Annual Robotics Competition",
+                  year: "2017",
+                  icon: "🥇",
+                  category: "Robotics",
+                  description: "Champion in international university robotics competition"
+                },
+                {
+                  title: "Transforming Tasks with AI – TDRA",
+                  year: "2024",
+                  icon: "🤖",
+                  category: "Artificial Intelligence",
+                  description: "AI implementation and automation technologies workshop"
+                }
+              ].map((cert, index) => (
+                <Card key={index} className="bg-gray-900 border border-orange-500/30 p-6 hover:border-orange-500 transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/20 group">
+                  <CardContent className="p-0">
+                    <div className="text-center mb-4">
+                      <div className="text-4xl mb-3 group-hover:scale-110 transition-transform">{cert.icon}</div>
+                      <div className="text-orange-500 text-xs font-bold px-2 py-1 bg-orange-500/10 rounded-full inline-block mb-2">
+                        {cert.year}
+                      </div>
+                      <span className="text-gray-400 text-xs block">{cert.category}</span>
+                    </div>
+                    <h4 className="text-white font-bold text-center mb-3 leading-tight">{cert.title}</h4>
+                    <p className="text-white/70 text-sm text-center leading-relaxed">{cert.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+
+          {/* Academic Highlights */}
+          <div className="mt-20 text-center">
+            <h3 className="text-white text-3xl font-bold mb-8">Academic Highlights</h3>
+            <div className="bg-gray-900 border border-orange-500/30 rounded-lg p-8 max-w-4xl mx-auto">
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 className="text-orange-500 text-xl font-bold mb-4">Education</h4>
+                  <div className="text-left space-y-3">
+                    <div>
+                      <p className="text-white font-semibold">Bachelor of Science in Computing and Information Technologies</p>
+                      <p className="text-orange-500">Rochester Institute of Technology, Dubai</p>
+                      <p className="text-gray-400 text-sm">Expected Dec 2025</p>
+                    </div>
+                    <div className="flex items-center gap-4 text-sm">
+                      <span className="text-white">GPA: <strong className="text-orange-500">3.49</strong></span>
+                      <span className="text-white">Dean's List: <strong className="text-orange-500">3 times</strong></span>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="text-orange-500 text-xl font-bold mb-4">Scholarships & Awards</h4>
+                  <div className="text-left space-y-2">
+                    <div className="flex items-start gap-2">
+                      <div className="w-1.5 h-1.5 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-white/80 text-sm">40% merit-based scholarship for academic excellence</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <div className="w-1.5 h-1.5 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-white/80 text-sm">Global Scholarship (~$3,270 USD) - Only one student per semester</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <div className="w-1.5 h-1.5 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-white/80 text-sm">Top 10% of class consistently across multiple courses</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Skills Section */}
       <section className="bg-[black] py-24">
         <div className="max-w-7xl mx-auto px-4">
