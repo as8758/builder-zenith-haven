@@ -554,11 +554,11 @@ INTERESTS
                   description: "Computer science fundamentals and Python programming"
                 },
                 {
-                  title: "DEWA Robotics Championship Winner",
+                  title: "DEWA Robotics Championship Participant",
                   year: "2017",
                   icon: "🏆",
                   category: "Robotics",
-                  description: "First place in Dubai Electricity and Water Authority robotics competition"
+                  description: "Participated in Dubai Electricity and Water Authority robotics competition"
                 },
                 {
                   title: "First Place – Wollongong Annual Robotics Competition",
@@ -573,6 +573,13 @@ INTERESTS
                   icon: "🤖",
                   category: "Artificial Intelligence",
                   description: "AI implementation and automation technologies workshop"
+                },
+                {
+                  title: "Microsoft Excel - Excel from Beginner to Advanced",
+                  year: "2022",
+                  icon: "📊",
+                  category: "Data Analysis",
+                  description: "Comprehensive Excel training covering advanced functions and data analysis"
                 }
               ].map((cert, index) => (
                 <Card key={index} className="bg-gray-900 border border-orange-500/30 p-6 hover:border-orange-500 transition-all duration-500 hover:shadow-xl hover:shadow-orange-500/30 group transform hover:scale-105 hover:-translate-y-3 animate-fade-in-stagger">
@@ -804,10 +811,10 @@ INTERESTS
               { number: "2+", label: "Years Experience" },
             ].map((stat, index) => (
               <div key={index}>
-                <h3 className="text-2xl font-bold text-black mb-2">
+                <h3 className="text-2xl font-bold text-white mb-2">
                   {stat.number}
                 </h3>
-                <p className="text-black text-sm font-bold">{stat.label}</p>
+                <p className="text-white text-sm font-bold">{stat.label}</p>
               </div>
             ))}
           </div>
