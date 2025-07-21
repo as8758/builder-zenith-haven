@@ -88,7 +88,7 @@ export default function Index() {
 
         {/* Hero Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 pb-12">
-          <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
+          <div className="grid lg:grid-cols-2 gap-12 items-center ml-[199px] pt-[116px] pr-[196px] pl-[195px]">
             {/* Left Content */}
             <div className="space-y-8">
               <div>
