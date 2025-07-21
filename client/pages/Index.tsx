@@ -235,7 +235,7 @@ INTERESTS
                          transition-all duration-300 hover:shadow-2xl hover:shadow-orange-500/50 hover:scale-110
                          animate-glow-pulse transform active:scale-95 flex items-center gap-3"
               >
-                <Download className="w-5 h-5 transition-transform group-hover:animate-bounce" />
+                <Download className="w-5 h-5 transition-all duration-300 group-hover:animate-bounce group-hover:text-yellow-400 group-hover:scale-125" />
                 Download Complete CV
               </button>
             </div>
