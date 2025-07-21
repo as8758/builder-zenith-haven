@@ -88,60 +88,76 @@ export default function Index() {
 
         {/* Hero Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 pb-12">
-          <div className="flex flex-col items-center justify-center min-h-[80vh] text-center space-y-8 animate-fade-in">
+          <div className="flex flex-col items-center justify-center min-h-[80vh] text-center space-y-8">
             {/* Main Content */}
-            <div className="space-y-6">
-              <h1 className="text-6xl lg:text-8xl xl:text-9xl font-bold leading-tight animate-slide-up">
+            <div className="space-y-6 animate-fade-in">
+              <h1 className="text-6xl lg:text-8xl xl:text-9xl font-bold leading-tight transform transition-all duration-1000 hover:scale-105">
                 <span className="text-white">Hello</span>
                 <span className="text-orange-500 animate-pulse">.</span>
               </h1>
 
-              <div className="space-y-4 animate-slide-up-delay">
-                <div className="w-16 h-1 bg-orange-500 mx-auto animate-expand"></div>
-                <h2 className="text-2xl lg:text-4xl text-orange-500 font-medium animate-fade-in-delay">
+              <div className="space-y-4">
+                <div className="w-16 h-1 bg-orange-500 mx-auto transition-all duration-1000 hover:w-24"></div>
+                <h2 className="text-2xl lg:text-4xl text-orange-500 font-medium opacity-0 animate-fade-in animation-delay-500">
                   My Name is Adhel Siddique
                 </h2>
-                <h3 className="text-lg lg:text-2xl text-white/90 font-light animate-fade-in-delay-2">
+                <h3 className="text-lg lg:text-2xl text-white/90 font-light opacity-0 animate-fade-in animation-delay-700">
                   Professional Data Analyst & AI Developer
                 </h3>
               </div>
             </div>
 
             {/* CV Download Button */}
-            <div className="animate-bounce-in">
+            <div className="opacity-0 animate-fade-in animation-delay-1000">
               <button
                 onClick={() => {
-                  // Create and download CV
+                  // Create and download CV as PDF-like text file
                   const cvContent = `ADHEL SIDDIQUE
 Rochester, NY | +1 (585) 2303740 | adhelsiddique@gmail.com
 
-Summary
+SUMMARY
 Data-focused Business Analyst with proven expertise in Power BI, SQL, Python, and MS Office tools, including Excel and Access.
 Experienced in extracting and analyzing data to identify trends and opportunities that enhance operational processes and profitability.
 Adept at designing reports and recommending actionable improvements to support business initiatives in dynamic environments.
 
-Education
-Rochester Institute of Technology, Dubai Dec 2025
+EDUCATION
+Rochester Institute of Technology, Dubai                                                                Dec 2025
 BSc, Computing and Information Technologies
 • GPA: 3.49 (Cumulative)
-• Achievements: Dean's List – Recognized for academic excellence three times, Scholarships: Awarded a 40% scholarship towards
-tuition, Global Scholarship Program: Secured an extra 12,000 AED (~$3,270 USD) scholarship, granted to only one student per
-semester for studying abroad at any RIT global campus
+• Achievements: Dean's List – Recognized for academic excellence three times
+• Scholarships: Awarded 40% scholarship towards tuition
+• Global Scholarship Program: Secured extra 12,000 AED (~$3,270 USD) scholarship
 
-Experience
-SIROCO LLC Oct 2024 - Jan 2025
-Business Analyst Remote, United States
-• Analyzed business data to identify trends and insights, supporting decision-making processes.
-• Developed detailed reports and dashboards using Power BI, PostgreSQL, and Excel, incorporating query design techniques.
-• Recommended process improvements to enhance overall profitability and operational efficiency.
+Vijayagiri Public School                                                                           May 2021
+Higher Secondary Education, PCMC
 
-Skills
-• Data Analysis: Data Analysis (Power BI, SQL, DAX), Statistical Analysis, Report Crafting
-• Technical Tools: Excel, Microsoft Azure
-• Programming: Python, Java
+Gems Our Own Indian School                                                                         Dec 2019
+Secondary Education, Grades 6-10, CBSE
+
+EXPERIENCE
+SIROCO LLC                                                                               Oct 2024 - Jan 2025
+Business Analyst | Remote, United States
+• Analyzed business data to identify trends and insights, supporting decision-making processes
+• Developed detailed reports and dashboards using Power BI, PostgreSQL, and Excel
+• Recommended process improvements to enhance overall profitability and operational efficiency
+
+Sketches                                                                                  May 2023 - Jul 2023
+Brand Promoter | Dubai, UAE
+• Engaged customers with product demos and upcoming offers
+• Collected feedback and handled inquiries with confidence
+• Utilized strong communication skills to connect with customers and drive sales
+
+GMG, Sports Market                                                                        Jan 2022 - Apr 2022
+Inventory & Stock Assistant | Dubai, UAE
+• Efficiently managed and organized stock for smooth inventory flow
+• Accurately entered stock reports into the database, maintaining up-to-date records
+
+SKILLS
+• Data Analysis: Power BI, SQL, DAX, Statistical Analysis, Report Crafting
+• Technical Tools: Excel, Microsoft Azure, Python, Java
 • Soft Skills: Problem-Solving, Communication, Team Collaboration
 
-Certificates
+CERTIFICATES
 • Microsoft Certified: Azure Fundamentals
 • PL-300 Certified: Microsoft Power BI Data Analyst
 • CS50P – Harvard's Introduction to Programming with Python
@@ -161,16 +177,16 @@ Certificates
                 }}
                 className="group bg-orange-500 text-black hover:bg-orange-600 px-8 py-4 text-lg font-bold rounded-xl
                          transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/25
-                         flex items-center gap-3 animate-glow"
+                         flex items-center gap-3 active:scale-95"
               >
-                <Download className="w-5 h-5 group-hover:animate-bounce" />
+                <Download className="w-5 h-5 transition-transform group-hover:animate-bounce" />
                 Download CV
               </button>
             </div>
 
             {/* Scroll Indicator */}
-            <div className="animate-bounce mt-16">
-              <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
+            <div className="animate-bounce mt-16 opacity-70 hover:opacity-100 transition-opacity">
+              <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center cursor-pointer">
                 <div className="w-1 h-3 bg-orange-500 rounded-full mt-2 animate-pulse"></div>
               </div>
             </div>
