@@ -232,8 +232,8 @@ INTERESTS
                   window.URL.revokeObjectURL(url);
                 }}
                 className="group bg-orange-500 text-black hover:bg-orange-600 px-8 py-4 text-lg font-bold rounded-xl
-                         transition-all duration-300 hover:shadow-lg
-                         flex items-center gap-3"
+                         transition-all duration-300 hover:shadow-2xl hover:shadow-orange-500/50 hover:scale-110
+                         animate-glow-pulse transform active:scale-95 flex items-center gap-3"
               >
                 <Download className="w-5 h-5 transition-transform group-hover:animate-bounce" />
                 Download Complete CV
