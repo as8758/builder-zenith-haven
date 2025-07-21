@@ -91,17 +91,17 @@ export default function Index() {
           <div className="flex flex-col items-center justify-center min-h-[80vh] text-center space-y-8">
             {/* Main Content */}
             <div className="space-y-6">
-              <h1 className="text-6xl lg:text-8xl xl:text-9xl font-bold leading-tight">
-                <span className="text-white">Hello</span>
-                <span className="text-orange-500">.</span>
+              <h1 className="text-6xl lg:text-8xl xl:text-9xl font-bold leading-tight transform transition-all duration-1000 animate-fade-in-up">
+                <span className="text-white hover:text-orange-400 transition-colors duration-500">Hello</span>
+                <span className="text-orange-500 animate-pulse hover:animate-bounce">.</span>
               </h1>
 
-              <div className="space-y-4">
-                <div className="w-16 h-1 bg-orange-500 mx-auto"></div>
-                <h2 className="text-2xl lg:text-4xl text-orange-500 font-medium">
+              <div className="space-y-4 animate-fade-in-delay">
+                <div className="w-16 h-1 bg-orange-500 mx-auto transition-all duration-700 hover:w-32 animate-expand"></div>
+                <h2 className="text-2xl lg:text-4xl text-orange-500 font-medium transform transition-all duration-700 hover:scale-105 animate-slide-in-left">
                   My Name is Adhel Siddique
                 </h2>
-                <h3 className="text-lg lg:text-2xl text-white/90 font-light">
+                <h3 className="text-lg lg:text-2xl text-white/90 font-light transform transition-all duration-700 hover:text-white animate-slide-in-right">
                   Professional Data Analyst & AI Developer
                 </h3>
               </div>
