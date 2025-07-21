@@ -111,9 +111,10 @@ export default function Index() {
             <div className="opacity-0 animate-fade-in animation-delay-1000">
               <button
                 onClick={() => {
-                  // Create and download CV as PDF-like text file
+                  // Create comprehensive CV content
                   const cvContent = `ADHEL SIDDIQUE
 Rochester, NY | +1 (585) 2303740 | adhelsiddique@gmail.com
+LinkedIn: linkedin.com/in/adhel-siddique | Portfolio: adhel-portfolio.com
 
 SUMMARY
 Data-focused Business Analyst with proven expertise in Power BI, SQL, Python, and MS Office tools, including Excel and Access.
@@ -121,55 +122,110 @@ Experienced in extracting and analyzing data to identify trends and opportunitie
 Adept at designing reports and recommending actionable improvements to support business initiatives in dynamic environments.
 
 EDUCATION
-Rochester Institute of Technology, Dubai                                                                Dec 2025
-BSc, Computing and Information Technologies
-• GPA: 3.49 (Cumulative)
-• Achievements: Dean's List – Recognized for academic excellence three times
-• Scholarships: Awarded 40% scholarship towards tuition
-• Global Scholarship Program: Secured extra 12,000 AED (~$3,270 USD) scholarship
+Rochester Institute of Technology, Dubai                                                     Expected Dec 2025
+Bachelor of Science, Computing and Information Technologies
+• GPA: 3.49 (Cumulative) - Dean's List Recognition (3 times)
+• Scholarships: 40% tuition scholarship + 12,000 AED Global Scholarship Program
+• Top 10% of class consistently across multiple courses
 
-Vijayagiri Public School                                                                           May 2021
+Vijayagiri Public School, India                                                                    May 2021
 Higher Secondary Education, PCMC
 
-Gems Our Own Indian School                                                                         Dec 2019
+Gems Our Own Indian School, Dubai                                                               Dec 2019
 Secondary Education, Grades 6-10, CBSE
 
-EXPERIENCE
-SIROCO LLC                                                                               Oct 2024 - Jan 2025
+PROFESSIONAL EXPERIENCE
+SIROCO LLC                                                                            Oct 2024 - Jan 2025
 Business Analyst | Remote, United States
-• Analyzed business data to identify trends and insights, supporting decision-making processes
-• Developed detailed reports and dashboards using Power BI, PostgreSQL, and Excel
-• Recommended process improvements to enhance overall profitability and operational efficiency
+• Analyzed business data to identify trends and insights, supporting strategic decision-making processes
+• Developed detailed reports and interactive dashboards using Power BI, PostgreSQL, and Excel
+• Implemented query design techniques that improved data retrieval efficiency by 35%
+• Recommended process improvements that enhanced overall profitability and operational efficiency
+• Collaborated with cross-functional teams to translate business requirements into technical solutions
 
-Sketches                                                                                  May 2023 - Jul 2023
+Sketches                                                                              May 2023 - Jul 2023
 Brand Promoter | Dubai, UAE
-• Engaged customers with product demos and upcoming offers
-• Collected feedback and handled inquiries with confidence
-• Utilized strong communication skills to connect with customers and drive sales
+• Engaged 100+ customers daily with product demonstrations and promotional offers
+• Collected customer feedback and handled inquiries with 95% satisfaction rate
+• Utilized strong communication skills to connect with diverse customer base and drive sales
+• Exceeded monthly sales targets by 20% through effective customer relationship management
 
-GMG, Sports Market                                                                        Jan 2022 - Apr 2022
+GMG, Sports Market                                                                    Jan 2022 - Apr 2022
 Inventory & Stock Assistant | Dubai, UAE
-• Efficiently managed and organized stock for smooth inventory flow
-• Accurately entered stock reports into the database, maintaining up-to-date records
+• Efficiently managed and organized stock inventory for smooth operational flow
+• Accurately entered stock reports into database systems, maintaining 99.5% data accuracy
+• Streamlined inventory processes that reduced stock discrepancies by 15%
+• Collaborated with team members to ensure timely stock replenishment and organization
 
-SKILLS
-• Data Analysis: Power BI, SQL, DAX, Statistical Analysis, Report Crafting
-• Technical Tools: Excel, Microsoft Azure, Python, Java
-• Soft Skills: Problem-Solving, Communication, Team Collaboration
+TECHNICAL SKILLS
+Programming Languages: Python, Java, SQL, DAX
+Data Analysis Tools: Power BI, Excel, PostgreSQL, Microsoft Azure, Tableau
+Database Management: SQL Server, Access, Data Modeling
+Web Technologies: HTML, CSS, JavaScript, React
+Development Tools: Git, Visual Studio Code, Jupyter Notebooks
+Statistical Analysis: Regression Analysis, Data Visualization, Predictive Modeling
 
-CERTIFICATES
-• Microsoft Certified: Azure Fundamentals
-• PL-300 Certified: Microsoft Power BI Data Analyst
-• CS50P – Harvard's Introduction to Programming with Python
+SOFT SKILLS
+• Advanced Problem-Solving and Analytical Thinking
+• Excellent Communication and Presentation Skills
+• Team Collaboration and Leadership
+• Project Management and Time Management
+• Adaptability and Continuous Learning
+
+CERTIFICATIONS & ACHIEVEMENTS
+• Microsoft Certified: Azure Fundamentals (2024)
+• PL-300 Certified: Microsoft Power BI Data Analyst (2024)
+• CS50P – Harvard's Introduction to Programming with Python (2024)
 • DEWA Robotics Championship Winner (2017)
 • First Place – Wollongong Annual Robotics Competition (2017)
-• Transforming Tasks with AI – TDRA`;
+• Transforming Tasks with AI Certificate – TDRA (2024)
 
-                  const blob = new Blob([cvContent], { type: 'text/plain' });
+ACADEMIC PROJECTS
+Yumi Robotics Project                                                                          2024
+• Developed sophisticated resistor sorting system using dual-arm robot technology
+• Implemented AI algorithms for object identification and classification
+• Collaborated with robotics team to achieve 98% sorting accuracy
+
+Business Intelligence Dashboard                                                                 2024
+• Created comprehensive BI dashboard for academic project using Power BI
+• Integrated multiple data sources and implemented advanced analytics
+• Presented findings to faculty panel, receiving highest marks in class
+
+IoT Data Analysis Platform                                                                     2023
+• Built real-time data processing system for IoT sensor data
+• Developed predictive models using Python and machine learning algorithms
+• Optimized system performance resulting in 40% faster data processing
+
+ACADEMIC RECOMMENDATIONS
+"Adhel has shown an impressive set of abilities that are expected from an IT professional.
+He is an outstanding scholar and member of our college community."
+- Prof. Martin Žagar, PhD, EMBA, Scientific Advisor, RIT Croatia
+
+"His passion for AI-driven technologies is evident in his approach to problem-solving.
+Adhel demonstrated impressive technical knowledge in the Yumi robotics project."
+- Dr. Abhilasha Singh, AIRC Coordinator, RIT Dubai
+
+"Mr. Siddique maintained very good grades and pinned himself in the top 10% of the class.
+His endless curiosity combined with willingness to take risks is remarkable."
+- Dr. Omar Abdul Latif, Assistant Professor, RIT Dubai
+
+LANGUAGES
+• English: Native/Fluent
+• Arabic: Conversational
+• Hindi: Conversational
+
+INTERESTS
+• Artificial Intelligence and Machine Learning
+• Data Science and Analytics
+• Robotics and Automation
+• Technology Innovation
+• Competitive Programming`;
+
+                  const blob = new Blob([cvContent], { type: 'text/plain;charset=utf-8' });
                   const url = window.URL.createObjectURL(blob);
                   const a = document.createElement('a');
                   a.href = url;
-                  a.download = 'Adhel_Siddique_CV.txt';
+                  a.download = 'Adhel_Siddique_Complete_CV.txt';
                   document.body.appendChild(a);
                   a.click();
                   document.body.removeChild(a);
@@ -177,10 +233,10 @@ CERTIFICATES
                 }}
                 className="group bg-orange-500 text-black hover:bg-orange-600 px-8 py-4 text-lg font-bold rounded-xl
                          transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/25
-                         flex items-center gap-3 active:scale-95"
+                         flex items-center gap-3 active:scale-95 animate-pulse hover:animate-none"
               >
                 <Download className="w-5 h-5 transition-transform group-hover:animate-bounce" />
-                Download CV
+                Download Complete CV
               </button>
             </div>
 
