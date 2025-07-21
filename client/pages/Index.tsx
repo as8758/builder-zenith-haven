@@ -43,7 +43,7 @@ export default function Index() {
         />
 
         {/* Navigation */}
-        <nav className="relative z-10 px-4 py-6">
+        <nav className="relative z-10 px-4 py-6 bg-black">
           <div className="max-w-7xl mx-auto flex items-center justify-between">
             <div className="flex items-center gap-8">
               <div className="flex items-center gap-3">
