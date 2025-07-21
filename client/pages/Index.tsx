@@ -30,7 +30,7 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-            <section className="relative min-h-screen bg-black overflow-hidden">
+      <section className="relative min-h-screen bg-black overflow-hidden">
         {/* Background blur effects */}
         <div
           className="absolute inset-0 opacity-20"
@@ -47,7 +47,7 @@ export default function Index() {
           <div className="max-w-7xl mx-auto flex items-center justify-between">
             <div className="flex items-center gap-8">
               <div className="flex items-center gap-3">
-                                <div className="w-3 h-3 rounded-full border-2 border-orange-500 flex items-center justify-center">
+                <div className="w-3 h-3 rounded-full border-2 border-orange-500 flex items-center justify-center">
                   <div className="w-1 h-1 bg-orange-500 rounded-full"></div>
                 </div>
                 <span className="text-orange-500 font-bold text-2xl">
@@ -57,13 +57,13 @@ export default function Index() {
               <div className="hidden md:flex items-center gap-16">
                 <a
                   href="#about"
-                                    className="text-orange-500 text-lg hover:text-white transition-colors"
+                  className="text-orange-500 text-lg hover:text-white transition-colors"
                 >
                   About me
                 </a>
                 <a
                   href="#services"
-                                    className="text-orange-500 text-lg hover:text-white transition-colors"
+                  className="text-orange-500 text-lg hover:text-white transition-colors"
                 >
                   Service
                 </a>
@@ -72,13 +72,13 @@ export default function Index() {
             <div className="hidden md:flex items-center gap-16">
               <a
                 href="#portfolio"
-                                  className="text-orange-500 text-lg hover:text-white transition-colors"
+                className="text-orange-500 text-lg hover:text-white transition-colors"
               >
                 Portfolio
               </a>
               <a
                 href="#contact"
-                                  className="text-orange-500 text-lg hover:text-white transition-colors"
+                className="text-orange-500 text-lg hover:text-white transition-colors"
               >
                 Contact
               </a>
@@ -92,8 +92,12 @@ export default function Index() {
             {/* Main Content */}
             <div className="space-y-6">
               <h1 className="text-6xl lg:text-8xl xl:text-9xl font-bold leading-tight transform transition-all duration-1000 animate-fade-in-up">
-                <span className="text-white hover:text-orange-400 transition-colors duration-500">Hello</span>
-                <span className="text-orange-500 animate-pulse hover:animate-bounce">.</span>
+                <span className="text-white hover:text-orange-400 transition-colors duration-500">
+                  Hello
+                </span>
+                <span className="text-orange-500 animate-pulse hover:animate-bounce">
+                  .
+                </span>
               </h1>
 
               <div className="space-y-4 animate-fade-in-delay">
@@ -221,11 +225,13 @@ INTERESTS
 • Technology Innovation
 • Competitive Programming`;
 
-                  const blob = new Blob([cvContent], { type: 'text/plain;charset=utf-8' });
+                  const blob = new Blob([cvContent], {
+                    type: "text/plain;charset=utf-8",
+                  });
                   const url = window.URL.createObjectURL(blob);
-                  const a = document.createElement('a');
+                  const a = document.createElement("a");
                   a.href = url;
-                  a.download = 'Adhel_Siddique_Complete_CV.txt';
+                  a.download = "Adhel_Siddique_Complete_CV.txt";
                   document.body.appendChild(a);
                   a.click();
                   document.body.removeChild(a);
@@ -247,8 +253,6 @@ INTERESTS
               </div>
             </div>
           </div>
-
-
         </div>
       </section>
 
@@ -262,7 +266,9 @@ INTERESTS
             <h3 className="text-orange-500 text-xl mb-4 uppercase tracking-wide hover:tracking-widest transition-all duration-500 transform hover:scale-105">
               Biography
             </h3>
-            <h2 className="text-white text-5xl font-bold mb-8 hover:text-orange-500 transition-all duration-500 transform hover:scale-105">Who am I?</h2>
+            <h2 className="text-white text-5xl font-bold mb-8 hover:text-orange-500 transition-all duration-500 transform hover:scale-105">
+              Who am I?
+            </h2>
             <div className="w-16 h-1 bg-orange-500 mx-auto transition-all duration-700 hover:w-32 hover:bg-gradient-to-r hover:from-orange-400 hover:to-orange-600"></div>
           </div>
 
@@ -307,25 +313,33 @@ INTERESTS
                   <h5 className="text-orange-500 text-sm font-bold mb-1 group-hover:text-orange-400 transition-colors">
                     Name
                   </h5>
-                  <p className="text-white group-hover:text-orange-100 transition-colors">Adhel Siddique</p>
+                  <p className="text-white group-hover:text-orange-100 transition-colors">
+                    Adhel Siddique
+                  </p>
                 </div>
                 <div className="bg-gray-800 rounded-lg p-4 border-l-4 border-orange-500 transition-all duration-300 hover:bg-gray-700 hover:border-orange-400 hover:shadow-lg hover:shadow-orange-500/20 hover:scale-105 transform group">
                   <h5 className="text-orange-500 text-sm font-bold mb-1 group-hover:text-orange-400 transition-colors">
                     Email
                   </h5>
-                  <p className="text-white group-hover:text-orange-100 transition-colors">Adhelsiddique@gmail.com</p>
+                  <p className="text-white group-hover:text-orange-100 transition-colors">
+                    Adhelsiddique@gmail.com
+                  </p>
                 </div>
                 <div className="bg-gray-800 rounded-lg p-4 border-l-4 border-orange-500 transition-all duration-300 hover:bg-gray-700 hover:border-orange-400 hover:shadow-lg hover:shadow-orange-500/20 hover:scale-105 transform group">
                   <h5 className="text-orange-500 text-sm font-bold mb-1 group-hover:text-orange-400 transition-colors">
                     Location
                   </h5>
-                  <p className="text-white group-hover:text-orange-100 transition-colors">NY , USA</p>
+                  <p className="text-white group-hover:text-orange-100 transition-colors">
+                    NY , USA
+                  </p>
                 </div>
                 <div className="bg-gray-800 rounded-lg p-4 border-l-4 border-orange-500 transition-all duration-300 hover:bg-gray-700 hover:border-orange-400 hover:shadow-lg hover:shadow-orange-500/20 hover:scale-105 transform group">
                   <h5 className="text-orange-500 text-sm font-bold mb-1 group-hover:text-orange-400 transition-colors">
                     Phone
                   </h5>
-                  <p className="text-white group-hover:text-orange-100 transition-colors">+1(585)2303740</p>
+                  <p className="text-white group-hover:text-orange-100 transition-colors">
+                    +1(585)2303740
+                  </p>
                 </div>
               </div>
 
@@ -409,13 +423,17 @@ INTERESTS
             <h3 className="text-orange-500 text-xl mb-4 uppercase tracking-wide animate-fade-in transform hover:tracking-widest transition-all duration-500">
               My Journey
             </h3>
-            <h2 className="text-white text-5xl font-bold mb-8 animate-fade-in-up transform hover:text-orange-500 hover:scale-105 transition-all duration-500">Experience & Achievements</h2>
+            <h2 className="text-white text-5xl font-bold mb-8 animate-fade-in-up transform hover:text-orange-500 hover:scale-105 transition-all duration-500">
+              Experience & Achievements
+            </h2>
             <div className="w-16 h-1 bg-orange-500 mx-auto animate-expand-delayed transition-all duration-700 hover:w-32"></div>
           </div>
 
           {/* Work Experience Timeline */}
           <div className="mb-20">
-            <h3 className="text-white text-3xl font-bold text-center mb-12">Work Experience</h3>
+            <h3 className="text-white text-3xl font-bold text-center mb-12">
+              Work Experience
+            </h3>
             <div className="relative">
               {/* Timeline Line */}
               <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-orange-500 h-full"></div>
@@ -431,9 +449,9 @@ INTERESTS
                     "Facilitate two weekly peer-led Supplemental Instruction (SI) study sessions for students",
                     "Support students in historically challenging courses (Software Development, Computer Science)",
                     "Plan and organize study session content; maintain accurate attendance records",
-                    "Communicate regularly with SI Supervisor and course faculty regarding student progress"
+                    "Communicate regularly with SI Supervisor and course faculty regarding student progress",
                   ],
-                  side: "left"
+                  side: "left",
                 },
                 {
                   period: "Oct 2024 – Jan 2025",
@@ -445,9 +463,9 @@ INTERESTS
                     "Analyzed business data to identify trends and actionable insights",
                     "Developed comprehensive reports and dashboards using Power BI and PostgreSQL",
                     "Worked cross-functionally to improve processes and data quality",
-                    "Implemented data-driven solutions that enhanced operational efficiency"
+                    "Implemented data-driven solutions that enhanced operational efficiency",
                   ],
-                  side: "right"
+                  side: "right",
                 },
                 {
                   period: "May 2023 – Jul 2023",
@@ -459,9 +477,9 @@ INTERESTS
                     "Engaged customers through product demos and promotional events",
                     "Collected customer feedback and performed competitive analysis",
                     "Exceeded engagement targets through strategic customer interaction",
-                    "Utilized online research for market analysis and trend identification"
+                    "Utilized online research for market analysis and trend identification",
                   ],
-                  side: "left"
+                  side: "left",
                 },
                 {
                   period: "Jan 2022 – Apr 2022",
@@ -473,9 +491,9 @@ INTERESTS
                     "Managed stock organization and tracked inventory with 99.5% accuracy",
                     "Entered stock reports into databases, maintaining up-to-date records",
                     "Streamlined inventory processes reducing discrepancies by 15%",
-                    "Collaborated with team to ensure efficient stock management"
+                    "Collaborated with team to ensure efficient stock management",
                   ],
-                  side: "right"
+                  side: "right",
                 },
                 {
                   period: "Apr 2021 – Dec 2021",
@@ -487,33 +505,51 @@ INTERESTS
                     "Assisted over 80 customers daily with sales and product information",
                     "Handled cash registers and maintained store presentation",
                     "Organized inventory and ensured optimal product display",
-                    "Achieved 95% customer satisfaction rate through excellent service"
+                    "Achieved 95% customer satisfaction rate through excellent service",
                   ],
-                  side: "left"
-                }
+                  side: "left",
+                },
               ].map((job, index) => (
-                <div key={index} className={`relative flex items-center mb-16 ${job.side === 'left' ? 'justify-start' : 'justify-end'}`}>
+                <div
+                  key={index}
+                  className={`relative flex items-center mb-16 ${job.side === "left" ? "justify-start" : "justify-end"}`}
+                >
                   {/* Timeline Dot */}
                   <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-orange-500 rounded-full border-4 border-black z-10 flex items-center justify-center transition-all duration-300 hover:scale-125 animate-pulse-slow">
                     <div className="w-2 h-2 bg-white rounded-full animate-ping"></div>
                   </div>
 
                   {/* Content Card */}
-                  <div className={`w-5/12 ${job.side === 'left' ? 'mr-auto pr-8' : 'ml-auto pl-8'}`}>
+                  <div
+                    className={`w-5/12 ${job.side === "left" ? "mr-auto pr-8" : "ml-auto pl-8"}`}
+                  >
                     <Card className="bg-gray-900 border border-orange-500/30 p-6 hover:border-orange-500 transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/20 transform hover:scale-105 hover:-translate-y-2 animate-slide-in-stagger group">
                       <CardContent className="p-0">
                         <div className="mb-4">
                           <div className="flex items-center gap-2 mb-2">
-                            <span className="text-orange-500 text-sm font-bold px-2 py-1 bg-orange-500/10 rounded">{job.period}</span>
-                            <span className="text-gray-400 text-sm">{job.type}</span>
+                            <span className="text-orange-500 text-sm font-bold px-2 py-1 bg-orange-500/10 rounded">
+                              {job.period}
+                            </span>
+                            <span className="text-gray-400 text-sm">
+                              {job.type}
+                            </span>
                           </div>
-                          <h4 className="text-white text-xl font-bold mb-1">{job.position}</h4>
-                          <h5 className="text-orange-500 text-lg font-semibold mb-1">{job.company}</h5>
-                          <p className="text-gray-400 text-sm mb-4">{job.location}</p>
+                          <h4 className="text-white text-xl font-bold mb-1">
+                            {job.position}
+                          </h4>
+                          <h5 className="text-orange-500 text-lg font-semibold mb-1">
+                            {job.company}
+                          </h5>
+                          <p className="text-gray-400 text-sm mb-4">
+                            {job.location}
+                          </p>
                         </div>
                         <ul className="space-y-2">
                           {job.highlights.map((highlight, i) => (
-                            <li key={i} className="flex items-start gap-2 text-white/80 text-sm">
+                            <li
+                              key={i}
+                              className="flex items-start gap-2 text-white/80 text-sm"
+                            >
                               <div className="w-1.5 h-1.5 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
                               <span>{highlight}</span>
                             </li>
@@ -529,7 +565,9 @@ INTERESTS
 
           {/* Certifications Timeline */}
           <div>
-            <h3 className="text-white text-3xl font-bold text-center mb-12">Certifications & Achievements</h3>
+            <h3 className="text-white text-3xl font-bold text-center mb-12">
+              Certifications & Achievements
+            </h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 {
@@ -537,62 +575,81 @@ INTERESTS
                   year: "2024",
                   icon: "☁️",
                   category: "Cloud Computing",
-                  description: "Fundamental understanding of Azure services and cloud concepts"
+                  description:
+                    "Fundamental understanding of Azure services and cloud concepts",
                 },
                 {
                   title: "Microsoft PL-300: Power BI Data Analyst Associate",
                   year: "2024",
                   icon: "📊",
                   category: "Data Analytics",
-                  description: "Advanced Power BI skills for data modeling and visualization"
+                  description:
+                    "Advanced Power BI skills for data modeling and visualization",
                 },
                 {
-                  title: "CS50P: Harvard's Introduction to Programming with Python",
+                  title:
+                    "CS50P: Harvard's Introduction to Programming with Python",
                   year: "2024",
                   icon: "🐍",
                   category: "Programming",
-                  description: "Computer science fundamentals and Python programming"
+                  description:
+                    "Computer science fundamentals and Python programming",
                 },
                 {
                   title: "DEWA Robotics Championship Participant",
                   year: "2017",
                   icon: "🏆",
                   category: "Robotics",
-                  description: "Participated in Dubai Electricity and Water Authority robotics competition"
+                  description:
+                    "Participated in Dubai Electricity and Water Authority robotics competition",
                 },
                 {
                   title: "First Place – Wollongong Annual Robotics Competition",
                   year: "2017",
                   icon: "🥇",
                   category: "Robotics",
-                  description: "Champion in international university robotics competition"
+                  description:
+                    "Champion in international university robotics competition",
                 },
                 {
                   title: "Transforming Tasks with AI – TDRA",
                   year: "2024",
                   icon: "🤖",
                   category: "Artificial Intelligence",
-                  description: "AI implementation and automation technologies workshop"
+                  description:
+                    "AI implementation and automation technologies workshop",
                 },
                 {
                   title: "Microsoft Excel - Excel from Beginner to Advanced",
                   year: "2022",
                   icon: "📊",
                   category: "Data Analysis",
-                  description: "Comprehensive Excel training covering advanced functions and data analysis"
-                }
+                  description:
+                    "Comprehensive Excel training covering advanced functions and data analysis",
+                },
               ].map((cert, index) => (
-                <Card key={index} className="bg-gray-900 border border-orange-500/30 p-6 hover:border-orange-500 transition-all duration-500 hover:shadow-xl hover:shadow-orange-500/30 group transform hover:scale-105 hover:-translate-y-3 animate-fade-in-stagger">
+                <Card
+                  key={index}
+                  className="bg-gray-900 border border-orange-500/30 p-6 hover:border-orange-500 transition-all duration-500 hover:shadow-xl hover:shadow-orange-500/30 group transform hover:scale-105 hover:-translate-y-3 animate-fade-in-stagger"
+                >
                   <CardContent className="p-0">
                     <div className="text-center mb-4">
-                      <div className="text-4xl mb-3 group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 animate-bounce-in">{cert.icon}</div>
+                      <div className="text-4xl mb-3 group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 animate-bounce-in">
+                        {cert.icon}
+                      </div>
                       <div className="text-orange-500 text-xs font-bold px-2 py-1 bg-orange-500/10 rounded-full inline-block mb-2">
                         {cert.year}
                       </div>
-                      <span className="text-gray-400 text-xs block">{cert.category}</span>
+                      <span className="text-gray-400 text-xs block">
+                        {cert.category}
+                      </span>
                     </div>
-                    <h4 className="text-white font-bold text-center mb-3 leading-tight">{cert.title}</h4>
-                    <p className="text-white/70 text-sm text-center leading-relaxed">{cert.description}</p>
+                    <h4 className="text-white font-bold text-center mb-3 leading-tight">
+                      {cert.title}
+                    </h4>
+                    <p className="text-white/70 text-sm text-center leading-relaxed">
+                      {cert.description}
+                    </p>
                   </CardContent>
                 </Card>
               ))}
@@ -601,37 +658,60 @@ INTERESTS
 
           {/* Academic Highlights */}
           <div className="mt-20 text-center">
-            <h3 className="text-white text-3xl font-bold mb-8">Academic Highlights</h3>
+            <h3 className="text-white text-3xl font-bold mb-8">
+              Academic Highlights
+            </h3>
             <div className="bg-gray-900 border border-orange-500/30 rounded-lg p-8 max-w-4xl mx-auto">
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <h4 className="text-orange-500 text-xl font-bold mb-4">Education</h4>
+                  <h4 className="text-orange-500 text-xl font-bold mb-4">
+                    Education
+                  </h4>
                   <div className="text-left space-y-3">
                     <div>
-                      <p className="text-white font-semibold">Bachelor of Science in Computing and Information Technologies</p>
-                      <p className="text-orange-500">Rochester Institute of Technology, Dubai</p>
+                      <p className="text-white font-semibold">
+                        Bachelor of Science in Computing and Information
+                        Technologies
+                      </p>
+                      <p className="text-orange-500">
+                        Rochester Institute of Technology, Dubai
+                      </p>
                       <p className="text-gray-400 text-sm">Expected Dec 2025</p>
                     </div>
                     <div className="flex items-center gap-4 text-sm">
-                      <span className="text-white">GPA: <strong className="text-orange-500">3.54</strong></span>
-                      <span className="text-white">Dean's List: <strong className="text-orange-500">4 times</strong></span>
+                      <span className="text-white">
+                        GPA: <strong className="text-orange-500">3.54</strong>
+                      </span>
+                      <span className="text-white">
+                        Dean's List:{" "}
+                        <strong className="text-orange-500">4 times</strong>
+                      </span>
                     </div>
                   </div>
                 </div>
                 <div>
-                  <h4 className="text-orange-500 text-xl font-bold mb-4">Scholarships & Awards</h4>
+                  <h4 className="text-orange-500 text-xl font-bold mb-4">
+                    Scholarships & Awards
+                  </h4>
                   <div className="text-left space-y-2">
                     <div className="flex items-start gap-2">
                       <div className="w-1.5 h-1.5 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-white/80 text-sm">40% merit-based scholarship for academic excellence</span>
+                      <span className="text-white/80 text-sm">
+                        40% merit-based scholarship for academic excellence
+                      </span>
                     </div>
                     <div className="flex items-start gap-2">
                       <div className="w-1.5 h-1.5 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-white/80 text-sm">Global Scholarship (~$3,270 USD) - Only one student per semester</span>
+                      <span className="text-white/80 text-sm">
+                        Global Scholarship (~$3,270 USD) - Only one student per
+                        semester
+                      </span>
                     </div>
                     <div className="flex items-start gap-2">
                       <div className="w-1.5 h-1.5 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-white/80 text-sm">Top 10% of class consistently across multiple courses</span>
+                      <span className="text-white/80 text-sm">
+                        Top 10% of class consistently across multiple courses
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -839,19 +919,19 @@ INTERESTS
                 text: "Adhel has shown an impressive set of abilities that are expected from an IT professional. He is an outstanding scholar and member of our college community with advanced computational problem-solving skills.",
                 author: "Prof. Martin Žagar, PhD, EMBA",
                 role: "Scientific Advisor in Computer Science",
-                institution: "RIT Croatia"
+                institution: "RIT Croatia",
               },
               {
                 text: "One of the most remarkable projects Adhel undertook was the Yumi project. His passion for AI-driven technologies is evident in his approach to problem-solving and technical knowledge.",
                 author: "Dr. Abhilasha Singh",
                 role: "AIRC Coordinator & Postdoctoral Researcher",
-                institution: "RIT Dubai"
+                institution: "RIT Dubai",
               },
               {
                 text: "Mr. Siddique maintained very good grades and pinned himself in the top 10% of the class. His endless curiosity combined with his willingness to take risks is remarkable.",
                 author: "Dr. Omar Abdul Latif",
                 role: "Assistant Professor & Director of Coding Center",
-                institution: "RIT Dubai"
+                institution: "RIT Dubai",
               },
             ].map((recommendation, index) => (
               <Card
@@ -878,7 +958,11 @@ INTERESTS
 
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
-                      {recommendation.author.split(' ').map(name => name[0]).join('').slice(0,2)}
+                      {recommendation.author
+                        .split(" ")
+                        .map((name) => name[0])
+                        .join("")
+                        .slice(0, 2)}
                     </div>
                     <div>
                       <p className="text-white text-sm font-medium">
@@ -898,7 +982,9 @@ INTERESTS
           </div>
 
           <div className="text-center mt-12">
-            <span className="text-white/60 text-sm animate-pulse">[ RECOMMENDATIONS ]</span>
+            <span className="text-white/60 text-sm animate-pulse">
+              [ RECOMMENDATIONS ]
+            </span>
           </div>
         </div>
       </section>
@@ -923,8 +1009,8 @@ INTERESTS
                     Let's Connect
                   </h3>
                   <p className="text-white/80 text-lg leading-relaxed mb-8">
-                    Ready to transform your data into actionable insights?
-                    Let's discuss how I can help your business grow through
+                    Ready to transform your data into actionable insights? Let's
+                    discuss how I can help your business grow through
                     data-driven solutions.
                   </p>
                 </div>
@@ -933,7 +1019,9 @@ INTERESTS
                   <div className="flex items-center gap-4 p-4 bg-gray-900 rounded-lg border-l-4 border-orange-500">
                     <Phone className="w-6 h-6 text-orange-500" />
                     <div>
-                      <p className="text-orange-500 text-sm font-medium">Phone</p>
+                      <p className="text-orange-500 text-sm font-medium">
+                        Phone
+                      </p>
                       <p className="text-white font-bold">+1 (585) 230-3740</p>
                     </div>
                   </div>
@@ -941,38 +1029,54 @@ INTERESTS
                   <div className="flex items-center gap-4 p-4 bg-gray-900 rounded-lg border-l-4 border-orange-500">
                     <Mail className="w-6 h-6 text-orange-500" />
                     <div>
-                      <p className="text-orange-500 text-sm font-medium">Email</p>
-                      <p className="text-white font-bold">adhelsiddique@gmail.com</p>
+                      <p className="text-orange-500 text-sm font-medium">
+                        Email
+                      </p>
+                      <p className="text-white font-bold">
+                        adhelsiddique@gmail.com
+                      </p>
                     </div>
                   </div>
 
                   <div className="flex items-center gap-4 p-4 bg-gray-900 rounded-lg border-l-4 border-orange-500">
                     <MapPin className="w-6 h-6 text-orange-500" />
                     <div>
-                      <p className="text-orange-500 text-sm font-medium">Location</p>
+                      <p className="text-orange-500 text-sm font-medium">
+                        Location
+                      </p>
                       <p className="text-white font-bold">Rochester, NY, USA</p>
                     </div>
                   </div>
                 </div>
 
                 <div className="pt-6">
-                  <h4 className="text-white text-xl font-bold mb-4">Available For</h4>
+                  <h4 className="text-white text-xl font-bold mb-4">
+                    Available For
+                  </h4>
                   <div className="space-y-2">
                     <div className="flex items-center gap-2">
                       <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
-                      <span className="text-white/80">Data Analysis Projects</span>
+                      <span className="text-white/80">
+                        Data Analysis Projects
+                      </span>
                     </div>
                     <div className="flex items-center gap-2">
                       <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
-                      <span className="text-white/80">Business Intelligence Consulting</span>
+                      <span className="text-white/80">
+                        Business Intelligence Consulting
+                      </span>
                     </div>
                     <div className="flex items-center gap-2">
                       <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
-                      <span className="text-white/80">AI & Automation Solutions</span>
+                      <span className="text-white/80">
+                        AI & Automation Solutions
+                      </span>
                     </div>
                     <div className="flex items-center gap-2">
                       <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
-                      <span className="text-white/80">Full-time Opportunities</span>
+                      <span className="text-white/80">
+                        Full-time Opportunities
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -1027,7 +1131,9 @@ INTERESTS
             <div className="text-center mt-16">
               <div className="inline-flex items-center gap-3 px-6 py-3 bg-gray-900 rounded-full border border-orange-500/30">
                 <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-                <span className="text-white font-medium">Available for new projects</span>
+                <span className="text-white font-medium">
+                  Available for new projects
+                </span>
               </div>
             </div>
           </div>
