@@ -228,9 +228,9 @@ CERTIFICATES
             <div className="relative">
               <div className="bg-[black] p-8 border border-orange-500 rounded-lg shadow-2xl">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fc08b90088e804256b075841c946b0250%2Fbf640d761d1540e3bdf9c96db8089b5f?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fc08b90088e804256b075841c946b0250%2F5fb71b5e59bb44e3bfcf26621c78d6c8"
                   alt="Adhel Siddique Professional"
-                  className="w-full h-[500px] object-cover rounded"
+                  className="w-full h-full object-cover rounded"
                 />
               </div>
               {/* Decorative dots */}
@@ -248,7 +248,7 @@ CERTIFICATES
             <div>
               <h3 className="text-orange-500 text-xl mb-4">About Me</h3>
               <h4 className="text-white text-2xl font-bold mb-6">
-                Adhel Siddique's Details
+                Adhel Siddique
               </h4>
 
               <p className="text-white text-lg leading-relaxed mb-8">
@@ -269,19 +269,19 @@ CERTIFICATES
                   <h5 className="text-orange-500 text-sm font-bold mb-1">
                     Email
                   </h5>
-                  <p className="text-white">adhel@example.com</p>
+                  <p className="text-white">Adhelsiddique@gmail.com</p>
                 </div>
                 <div className="bg-gray-800 rounded-lg p-4 border-l-4 border-orange-500">
                   <h5 className="text-orange-500 text-sm font-bold mb-1">
                     Location
                   </h5>
-                  <p className="text-white">Dubai, UAE</p>
+                  <p className="text-white">NY , USA</p>
                 </div>
                 <div className="bg-gray-800 rounded-lg p-4 border-l-4 border-orange-500">
                   <h5 className="text-orange-500 text-sm font-bold mb-1">
                     Phone
                   </h5>
-                  <p className="text-white">+971-XXX-XXXX</p>
+                  <p className="text-white">+1(585)2303740</p>
                 </div>
               </div>
 
