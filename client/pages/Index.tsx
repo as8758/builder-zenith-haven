@@ -281,12 +281,12 @@ INTERESTS
 
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left - Image with frame */}
-            <div className="relative">
-              <div className="bg-black p-8 border border-orange-500 rounded-lg shadow-2xl">
+            <div className="relative group">
+              <div className="bg-black p-8 border border-orange-500 rounded-lg shadow-2xl transition-all duration-500 hover:shadow-orange-500/50 hover:border-orange-400 hover:scale-105 group-hover:rotate-1">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fc08b90088e804256b075841c946b0250%2F5fb71b5e59bb44e3bfcf26621c78d6c8"
                   alt="Adhel Siddique Professional"
-                  className="w-full h-[500px] object-cover rounded"
+                  className="w-full h-[500px] object-cover rounded transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
                 />
               </div>
               {/* Decorative dots */}
@@ -294,7 +294,8 @@ INTERESTS
                 {Array.from({ length: 64 }).map((_, i) => (
                   <div
                     key={i}
-                    className="w-1 h-1 bg-orange-500 rounded-full opacity-60"
+                    className="w-1 h-1 bg-orange-500 rounded-full opacity-60 transition-all duration-300 hover:opacity-100 hover:scale-150 hover:bg-orange-400"
+                    style={{ animationDelay: `${i * 0.02}s` }}
                   ></div>
                 ))}
               </div>
