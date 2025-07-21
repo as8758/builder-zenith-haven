@@ -87,7 +87,7 @@ export default function Index() {
         </nav>
 
         {/* Hero Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 py-12">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 pb-12">
           <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
             {/* Left Content */}
             <div className="space-y-8">
