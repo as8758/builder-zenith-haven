@@ -587,10 +587,10 @@ INTERESTS
                   description: "AI implementation and automation technologies workshop"
                 }
               ].map((cert, index) => (
-                <Card key={index} className="bg-gray-900 border border-orange-500/30 p-6 hover:border-orange-500 transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/20 group">
+                <Card key={index} className="bg-gray-900 border border-orange-500/30 p-6 hover:border-orange-500 transition-all duration-500 hover:shadow-xl hover:shadow-orange-500/30 group transform hover:scale-105 hover:-translate-y-3 animate-fade-in-stagger">
                   <CardContent className="p-0">
                     <div className="text-center mb-4">
-                      <div className="text-4xl mb-3 group-hover:scale-110 transition-transform">{cert.icon}</div>
+                      <div className="text-4xl mb-3 group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 animate-bounce-in">{cert.icon}</div>
                       <div className="text-orange-500 text-xs font-bold px-2 py-1 bg-orange-500/10 rounded-full inline-block mb-2">
                         {cert.year}
                       </div>
