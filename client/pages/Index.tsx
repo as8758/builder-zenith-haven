@@ -629,13 +629,13 @@ CERTIFICATES
                   <p className="text-orange-500 flex items-center gap-2">
                     <span>Call Me:</span>
                     <span className="text-white font-bold">
-                      +971 123 (456) 789
+                      +1(585)2303740
                     </span>
                   </p>
                   <p className="text-orange-500 flex items-center gap-2">
                     <span>E-mail:</span>
                     <span className="text-white font-bold">
-                      adhel@example.com
+                      Adhelsiddique@gmail.com
                     </span>
                   </p>
                 </div>
