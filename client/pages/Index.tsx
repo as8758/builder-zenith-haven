@@ -852,13 +852,7 @@ INTERESTS
                 key={index}
                 className={`flex ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"} items-center gap-16`}
               >
-                <div className="flex-1">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-80 object-cover rounded-lg"
-                  />
-                </div>
+                <div className="flex-1" />
                 <div className="flex-1 space-y-6">
                   <div>
                     <h4 className="text-orange-500 text-lg font-bold mb-2">
@@ -883,7 +877,7 @@ INTERESTS
           </div>
 
           {/* Stats */}
-          <div className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 text-center bg-orange-500 p-8 rounded-lg">
             {[
               { number: "15+", label: "Projects Done" },
               { number: "98%", label: "Client Satisfaction" },
