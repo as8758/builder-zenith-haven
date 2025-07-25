@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   build: {
-    outDir: "docs/spa",
+    outDir: "docs",
   },
   plugins: [react(), expressPlugin()],
   resolve: {
