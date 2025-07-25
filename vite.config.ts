@@ -5,12 +5,13 @@ import { createServer } from "./server";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: mode === 'production' ? '/builder-zenith-haven/' : '/',
   server: {
     host: "::",
     port: 8080,
   },
   build: {
-    outDir: "dist/spa",
+    outDir: "docs/spa",
   },
   plugins: [react(), expressPlugin()],
   resolve: {
